@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview_all" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cmdm.app.view.CustomListViewInScrollView android:id="@id/order_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/listview_item_selector" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_radio" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/order_listview">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_message" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textColor="@color/black" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="2.0dip" android:text="@string/txt_pay_type_prefix" />
+                <TextView android:textSize="26.0sp" android:textColor="@color/red" android:layout_gravity="bottom" android:id="@id/textview_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <TextView android:textColor="@color/black" android:layout_gravity="bottom" android:id="@id/textview_pay_type_suffix" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="2.0dip" android:text="@string/txt_pay_type_suffix" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/layout_remain_manb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/layout_message">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/textview_remain_manbi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_pay" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/layout_remain_manb">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/layout_manbi_option" android:background="@drawable/ic_pay_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/imageView_manbi" android:background="@drawable/ic_manbi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/tips_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textView_manbi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/txt_manbi_pay" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_calls_option" android:background="@drawable/ic_pay_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="17.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/imageView_calls" android:background="@drawable/ic_huafei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/tips_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textView_calls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_calls_pay" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout_verification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/layout_radio">
+            <com.cmdm.app.view.CustomImageVerificationView android:id="@id/layout_image_verification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/button_pay_sure" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="10.0dip" android:text="@string/dialog_btn_OK" android:layout_below="@id/layout_verification" style="@style/Btn.Line.Orange.NormalSize" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/textview_calls_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="15.0dip" android:text="@string/service_num" android:layout_below="@id/button_pay_sure" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

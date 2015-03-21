@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="@dimen/sub_tabs_height">
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/channelGroup" android:background="@drawable/mask_tab_line" android:layout_width="0.0dip" android:layout_height="42.0dip" android:layout_weight="3.0" />
+        <RadioButton android:textSize="18.0dip" android:textColor="@color/tab_text_selector" android:gravity="center" android:id="@id/cb" android:background="@null" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:button="@null" android:drawableRight="@drawable/ic_arrow_toggle_selector" android:drawablePadding="-4.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.hisunflytone.framwork.BaseViewPager android:layout_gravity="top" android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/sub_tabs_height" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/sub_tabs_height" />
+</FrameLayout>

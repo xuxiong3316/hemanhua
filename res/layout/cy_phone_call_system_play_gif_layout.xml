@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/phone_call_play" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.phone.view.gif.GifView android:id="@id/phone_call_play_gif" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/phone_call_play_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@id/phone_call_play_img" />
+    <include layout="@layout/cy_system_call_view_layout" />
+</FrameLayout>

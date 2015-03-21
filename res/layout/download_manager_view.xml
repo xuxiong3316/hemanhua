@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/btm_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/btm_bar_pause" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ProgressBar android:layout_gravity="center" android:id="@id/space_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" style="@style/SpaceProgressBarStyleHorizontal" />
+            <TextView android:gravity="center" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="总空间1.2G " android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/DwnMgrBtmBar" />
+            <TextView android:gravity="center" android:id="@id/status_center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="总空间1.2G " android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/DwnMgrBtmBar" />
+            <Button android:gravity="center" android:id="@id/pauseAll" android:background="@drawable/btn_line_white_selector" android:visibility="gone" android:layout_width="84.0dip" android:layout_height="36.0dip" android:layout_marginRight="6.0dip" android:text="全部暂停" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/DwnMgrBtnText" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ListView android:id="@id/dwnmgr_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_selector" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_below="@id/btm_bar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_data" android:background="@color/background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/btm_bar">
+        <ImageView android:id="@id/no_data_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/content_tip_text_size" android:textColor="@color/tips_color" android:id="@id/no_data_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlProgressWait" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="@dimen/loading_width" android:layout_height="@dimen/loading_height" android:indeterminate="false" android:indeterminateDrawable="@drawable/wait_progress_animation" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/tips_color" android:id="@id/wait_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/txt_search_tip" android:layout_below="@id/progressBar" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/wait_img" android:background="@drawable/wait_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/progressBar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/btm_bar_control" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/btm_bar_del" android:background="@drawable/bar_btm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:id="@id/all" android:background="@drawable/btn_line_gray_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:text="@string/txt_select_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/opus_download_btm_btn_all_text" />
+            <Button android:textColor="@drawable/btn_line_red_text_selector" android:id="@id/confirm" android:background="@drawable/btn_line_red_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/txt_select_del" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/opus_download_btm_btn_down_text" />
+            <TextView android:gravity="center" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="已选择（0）" android:layout_toLeftOf="@id/confirm" android:layout_toRightOf="@id/all" android:layout_centerVertical="true" style="@style/opus_download_btm_text" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bar_top" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_navs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/title_menus" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_menus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

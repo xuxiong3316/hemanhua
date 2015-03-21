@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tvNotContact" android:background="@drawable/error_ico" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="您的通讯录还没有添加联系人哦" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/llSearch" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <EditText android:textSize="14.0dip" android:id="@id/edSearchContent" android:background="@drawable/input_focus_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip" android:hint="快速检索联系人" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <include layout="@layout/diver_line_noexpand" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvContacts" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_selector" android:scrollingCache="false" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" />
+        <com.cmdm.app.view.SideBar android:id="@id/side_bar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

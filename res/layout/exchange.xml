@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/exchange_realview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlExchange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <RelativeLayout android:id="@id/rljifen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivJfen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/myzone_jifen" />
+                    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff0174a2" android:id="@id/tvJifen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/ivJfen" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="18.0dip" android:id="@id/tvJifenDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/rljifen" style="@style/detail_opus_desc" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tvJifenDetail">
+                    <RelativeLayout android:id="@id/rlExcJifen" android:background="@drawable/input_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="5.0dip">
+                        <EditText android:id="@id/edJifen" android:background="@drawable/input_focus_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="20" android:layout_alignParentBottom="true" android:inputType="number" />
+                    </RelativeLayout>
+                    <com.cmdm.app.view.CustomImageVerificationView android:id="@id/layout_image_verification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+                    <Button android:textColor="@drawable/btn_line_orange_text_selector" android:gravity="center" android:id="@id/btn_exchange" android:background="@drawable/btn_line_orange_selector" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="18.0dip" android:text="兑换" style="@style/my_cartoon_textview" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlExchangeNoEnought" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <ImageView android:id="@id/ivNoEnought" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mood10_big" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff0174a2" android:id="@id/tvNoEnought" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/ivNoEnought" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llExchangeAgain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换成功！" />
+                <TextView android:textSize="18.0dip" android:id="@id/tvManBi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <Button android:id="@id/btnExchangeAgain" android:background="@drawable/btn_selector" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="5.0dip" android:text="继续兑换" android:layout_below="@id/edJifen" style="@style/MyText3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="积分兑换漫币说明" style="@style/detail_opus_info" />
+                <TextView android:textSize="16.0dip" android:id="@id/tvInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/reload_layout" />
+        <include layout="@layout/progress_wait" />
+    </RelativeLayout>
+</LinearLayout>

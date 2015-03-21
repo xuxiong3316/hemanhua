@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.CustomScollLoadListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/category_list_item_bg" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

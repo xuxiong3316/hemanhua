@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faves
+  xmlns:fave="http://schemas.android.com/apk/res/com.hisunflytone.android">
+    <item fave:title_name="漫画-好评榜" fave:channelId="2" fave:tagId="14" fave:layoutStyle="rank" fave:fixed="false" />
+    <item fave:title_name="漫画-玄幻" fave:channelId="2" fave:tagId="5" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="漫画-连载" fave:channelId="2" fave:tagId="35" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="动画-好评榜" fave:channelId="4" fave:tagId="17" fave:layoutStyle="rank" fave:fixed="false" />
+    <item fave:title_name="动画-搞笑" fave:channelId="4" fave:tagId="30" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="动画-完结" fave:channelId="4" fave:tagId="23" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="绘本-情感" fave:channelId="7" fave:tagId="31" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="绘本-大陆" fave:channelId="7" fave:tagId="34" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:title_name="绘本-连载" fave:channelId="7" fave:tagId="39" fave:layoutStyle="normal" fave:fixed="false" />
+    <item fave:index="1004" fave:title_name="和娱乐" fave:channelId="123" fave:tagId="1004" fave:layoutStyle="normal" fave:fixed="true" />
+</faves>

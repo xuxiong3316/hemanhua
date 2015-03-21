@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llMbRecharge" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/listview_divider_no_inset" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llcharge" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvPrompt" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" style="@style/color_primary_sp14" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/tip_color" android:id="@id/err_tip" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="3.0dip" android:text=" " />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bar_list" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <EditText android:id="@id/edt_verify" android:background="@null" android:layout_width="0.0dip" android:layout_height="48.0dip" android:hint="@string/hint_verify" android:maxLength="6" android:digits="0123456789" android:drawableLeft="@drawable/ic_verify" android:drawablePadding="4.0dip" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" style="@style/color444444sp16" />
+            <Button android:id="@id/btn_get_verify" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="5.0dip" android:minWidth="120.0dip" android:text="@string/get_verify" style="@style/Btn.Line.Green" />
+        </LinearLayout>
+        <CheckBox android:id="@id/ckb_automms" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:button="@null" android:text="@string/register_automms" android:drawableLeft="@drawable/checkbox_selector" android:drawablePadding="5.0dip" style="@style/color_primary_sp16" />
+        <TextView android:id="@id/tips_get_verify" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/tips_get_verify" style="@style/color_primary_sp12" />
+        <com.cmdm.app.view.CustomImageVerificationView android:id="@id/layout_image_verification" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+        <Button android:id="@id/btnSure" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:text="@string/sure" style="@style/Btn.Line.Orange.NormalSize" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llChargeAgain" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imgExchangeResult" android:background="@drawable/exchange_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffff6e00" android:id="@id/tvMyMbCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip">
+            <TextView android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="兑换账号：" style="@style/color_primary_sp16" />
+            <TextView android:id="@id/tvMobileNum" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="" android:layout_toRightOf="@id/tvDesc" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/color_primary_sp16" />
+        </LinearLayout>
+        <Button android:id="@id/btnChargeAgain" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="28.0dip" android:text="@string/txt_charge_again" style="@style/Btn.Line.Green" />
+    </LinearLayout>
+</LinearLayout>

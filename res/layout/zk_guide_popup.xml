@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/topMeunlayout" android:background="@drawable/zk_comic_top_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:id="@id/setting_back_btn" android:background="@drawable/zk_btn_selector_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/topItemlayout" android:layout_toRightOf="@id/setting_back_btn" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:id="@id/topItemlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center" android:id="@id/top_screen_layout" android:background="@drawable/zk_sel_btn_autoscreen_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:layout_gravity="center" android:id="@id/top_btn_autoscreen" android:background="@drawable/zk_sel_btn_autoscreen_a" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:id="@id/top_btn_bookmark" android:background="@drawable/zk_bg_shuqian_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/top_btn_list" android:background="@drawable/zk_bg_xuanji_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/top_btn_menu" android:background="@drawable/zk_btn_selector_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bottomMeunlayout" android:background="@drawable/zk_comic_bottom_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/page_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0sp" android:id="@id/cmep_currPage_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                <TextView android:textSize="15.0sp" android:id="@id/cmep_allPage_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/99页" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/seekbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/light_layout" android:layout_toRightOf="@id/page_layout" android:layout_centerVertical="true">
+                <SeekBar android:id="@id/guide_seekbar" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="6.0dip" android:progressDrawable="@drawable/zk_seekbar_img" android:thumb="@drawable/zk_bright_thumb" android:thumbOffset="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/light_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_light" android:background="@drawable/zk_btn_selector_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/tv_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="亮度" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/tv_line" android:background="@drawable/zk_divide_menu" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_collection_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_collection" android:background="@drawable/zk_shouchang_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_collection_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="收藏" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_autoplay_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_autoplay" android:background="@drawable/zk_bg_autoplay_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_autoplay_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="自动播放" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_model_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_model" android:background="@drawable/zk_ic_model_fentu_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_model_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="卷纸模式" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_flower_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_flower" android:background="@drawable/zk_bg_xuanhua_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_flower_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="鲜花" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_egg_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_egg" android:background="@drawable/zk_bg_jidan_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_egg_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="鸡蛋" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_light_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_cmep_light" android:background="@drawable/zk_sel_btn_light_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/cmep_light_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="亮度" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/zk_comic_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bottomMeunlayout" android:layout_below="@id/topMeunlayout" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

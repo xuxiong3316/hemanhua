@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.CustomScrollView android:id="@id/mscrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/hongbao_info" android:background="#ffcccccc" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/rlNodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/tvPackageNodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还未订购任何包月套餐哦！" android:layout_centerInParent="true" />
+                <ImageView android:background="@drawable/empty_baoyue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/tvPackageNodata" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/tv_cartoon_title" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" android:text="@string/txt_cartoon_package_title" />
+                <View android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <com.cmdm.app.view.ListViewInScrollView android:id="@id/package_list_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/tv_magazine_title" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" android:text="@string/txt_magazine_package_title" />
+                <View android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <com.cmdm.app.view.ListViewInScrollView android:id="@id/package_list_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/tv_brand_title" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" android:text="@string/txt_brand_package_title" />
+                <View android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <com.cmdm.app.view.ListViewInScrollView android:id="@id/package_list_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0dip" android:textColor="@color/black" android:id="@id/tv_place_title" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" android:text="@string/txt_place_package_title" />
+                <View android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <com.cmdm.app.view.ListViewInScrollView android:id="@id/package_list_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:divider="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cmdm.app.view.CustomScrollView>
+</LinearLayout>

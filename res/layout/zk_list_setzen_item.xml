@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zk_mulu_bg_image" android:background="@drawable/zk_btn_selector_menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/xuanji_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/zk_mulu_free" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginRight="-4.0dip" android:src="@drawable/zk_mulu_free" android:layout_alignTop="@id/zk_mulu_bg_image" android:layout_alignRight="@id/zk_mulu_bg_image" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/expandablel_listview_item_seletor" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llContent" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.cmdm.app.view.CustomerImageView android:id="@id/imgIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffff5000" android:id="@id/tvPrice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/tvPrice" android:layout_toRightOf="@id/imgIcon" android:layout_centerVertical="true">
+                <TextView android:id="@id/tvOpusName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/color_primary_sp16" />
+                <TextView android:id="@id/tvSingleName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:singleLine="true" style="@style/color_primary_sp16" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff7f868d" android:id="@id/tvBuyType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff7f868d" android:id="@id/tvBuyDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/lineView" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/llContent" />
+</RelativeLayout>

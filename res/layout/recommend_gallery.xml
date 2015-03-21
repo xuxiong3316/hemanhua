@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.CustomerImageView android:id="@id/imgGalleryShow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/fg" android:background="@drawable/gridview_item_seletor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</FrameLayout>

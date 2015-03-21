@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/navitem_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/navitem_fg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_channel_bzfk" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/main_menu_text_color" android:gravity="center" android:id="@id/title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="帮助" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="28.0dip" android:src="@drawable/ic_tip_new_1" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/foc_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:src="@drawable/ic_channel_foc" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/dis_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:src="@drawable/ic_channel_dis" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

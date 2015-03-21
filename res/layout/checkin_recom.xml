@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvObtainJifen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" style="@style/color444444sp14" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="30.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llConmic" android:background="@drawable/checkin_recom_seletor" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_marginRight="50.0dip">
+            <ImageView android:id="@id/icon" android:background="@drawable/main_menu_mh_selector" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="12.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/checkin_recom_textcolor_selector" android:id="@id/name" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="漫画" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llAnimation" android:background="@drawable/checkin_recom_seletor" android:layout_width="92.0dip" android:layout_height="92.0dip">
+            <ImageView android:id="@id/icon" android:background="@drawable/main_menu_dh_selector" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="12.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/checkin_recom_textcolor_selector" android:id="@id/name" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="动画" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

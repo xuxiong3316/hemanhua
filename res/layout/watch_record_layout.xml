@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlWatchRecordLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/expandableListView" android:background="#fff5f5f5" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" />
+    <RelativeLayout android:id="@id/rlDeleteView" android:background="@drawable/bar_btm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignBottom="@id/expandableListView">
+        <Button android:id="@id/btnSelectAll" android:background="@drawable/btn_line_gray_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:text="@string/txt_select_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/btn_line_grey_text_style" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff3d4245" android:gravity="center" android:id="@id/tvSelectedCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已选择(0)" android:layout_toLeftOf="@id/btnDelSelected" android:layout_toRightOf="@id/btnSelectAll" android:layout_centerVertical="true" />
+        <Button android:id="@id/btnDelSelected" android:background="@drawable/btn_line_red_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/txt_select_del" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btn_line_red_text_style" />
+    </RelativeLayout>
+</RelativeLayout>

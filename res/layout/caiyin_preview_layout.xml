@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/priview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_top" android:layout_width="fill_parent" android:layout_height="48.0dip" android:src="@drawable/caiyin_preview_top" />
+    <View android:id="@id/preview_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/preview_top" />
+    <RelativeLayout android:gravity="bottom" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/preview_center">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/caiyin_preview_bottom" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

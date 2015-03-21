@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="@color/order_dialog_positive_btn_color_pre" />
+    </item>
+    <item android:drawable="@color/order_dialog_positive_btn_color" />
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmdm.phone.view.CommonLoadingView android:id="@id/common_loading_view" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loading_imageview" android:background="@anim/cy_page_loading_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@id/loading_imageview" />
+    <TextView android:gravity="center" android:id="@id/loading_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/loading_imageview" android:layout_centerInParent="true" />
+</com.cmdm.phone.view.CommonLoadingView>

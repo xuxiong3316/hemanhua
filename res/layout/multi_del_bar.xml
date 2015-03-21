@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_bottom" android:background="@drawable/bar_btm" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/all_check_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <Button android:id="@id/btn_all" android:background="@drawable/btn_line_gray_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:text="@string/txt_select_all" style="@style/btn_line_grey_text_style" />
+        <ImageView android:layout_gravity="bottom|right|center" android:id="@id/is_all_check" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/check_icon" android:contentDescription="是否选中" />
+    </FrameLayout>
+    <Button android:id="@id/btn_del" android:background="@drawable/btn_line_red_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/txt_select_del" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btn_line_red_text_style" />
+    <TextView android:gravity="center" android:id="@id/txt_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_del" android:layout_toRightOf="@id/all_check_layout" android:layout_centerInParent="true" style="@style/color_primary_sp16" />
+</RelativeLayout>

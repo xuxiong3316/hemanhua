@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/btm" android:background="@drawable/bar_btm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="1.0">
+            <RadioButton android:id="@id/chnl" android:background="@drawable/btm_bar_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:checked="false" android:button="@null" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="频道" android:drawableLeft="@drawable/ic_btm_channel" android:layout_centerInParent="true" style="@style/MainBtmBarStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="1.0">
+            <RadioButton android:id="@id/home" android:background="@drawable/btm_bar_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:checked="true" android:button="@null" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最爱" android:drawableLeft="@drawable/ic_btm_home" android:layout_centerInParent="true" style="@style/MainBtmBarStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="1.0">
+            <RadioButton android:id="@id/shelf" android:background="@drawable/btm_bar_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:checked="false" android:button="@null" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="书架" android:drawableLeft="@drawable/ic_btm_shelf" android:layout_centerInParent="true" style="@style/MainBtmBarStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btm">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </TabHost>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|center" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="观看画质设置" style="@style/color444444sp12" />
+        <View android:background="@color/expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include android:id="@id/watch_quality" layout="@layout/setting_anime_quality_radiogroup" />
+        <TextView android:gravity="left|center" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" android:text="下载画质设置" style="@style/color444444sp12" />
+        <View android:background="@color/expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include android:id="@id/download_quality" layout="@layout/setting_anime_download_quality_radiogroup" />
+    </LinearLayout>
+</ScrollView>

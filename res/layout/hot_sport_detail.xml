@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/hotsport_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/hotsport_bg_top" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="6.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvFlowGettingNum" android:background="@drawable/numbers_blue" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999999" style="@style/colorffffffsp30" />
+                <TextView android:id="@id/tvFlowGettingDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="人正在领取流量包" style="@style/colorffffffsp18" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+                <TextView android:id="@id/tvFlowGettedNum" android:background="@drawable/numbers_red" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" style="@style/colorffffffsp30" />
+                <TextView android:id="@id/tvFlowGettedDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="人已领取流量包" style="@style/colorffffffsp18" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/ivGift" android:layout_width="fill_parent" android:layout_height="136.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scaleType="fitXY" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btnJoin" android:background="@drawable/hot_btn_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="20.0dip" android:text="马上参加" style="@style/colorffffffsp20" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="16.0dip">
+            <TextView android:textSize="18.0sp" android:typeface="monospace" android:textStyle="bold|italic" android:textColor="@color/hotsport_province" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全国" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/hotsport_province" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="1.0dip" android:text="移动用户均可参加，以下省份有更多惊喜！" />
+        </LinearLayout>
+        <com.cmdm.app.view.GridViewInScrollView android:id="@id/gvProvincePer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="28.0dip" android:listSelector="@drawable/null_selector" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:numColumns="4" />
+        <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    </LinearLayout>
+</ScrollView>

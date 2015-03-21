@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/baseLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ViewStub android:id="@id/stub_progress" android:layout="@layout/progress_wait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/content_header" />
+    <ViewStub android:id="@id/stub_reload" android:layout="@layout/reload_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/content_header" />
+    <FrameLayout android:id="@id/content_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlTitle" />
+    <ViewStub android:id="@id/stub_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/content_header" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/stub_nodata" android:layout="@layout/no_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/content_header" />
+    <ViewStub android:id="@id/login_need" android:visibility="gone" android:layout="@layout/login_need_layout" android:inflatedId="@id/login_need" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/content_header" android:layout_alignParentBottom="true" />
+</RelativeLayout>

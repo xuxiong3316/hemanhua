@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe1e9e9" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/click_remove" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_del_favorite" />
+        <ImageView android:id="@id/icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_channel_mh_dark" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff333638" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/drag_handle" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_handle" />
+    </LinearLayout>
+</LinearLayout>

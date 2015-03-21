@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="qihoo360_security_apk_actions">
+        <item>自动添加书签</item>
+        <item>强制开机自启动</item>
+        <item>安装恶意插件</item>
+        <item>容易引起死机</item>
+        <item>强制联网</item>
+        <item>卸载不干净</item>
+        <item>私自发短信</item>
+        <item>扣费提示不明显</item>
+        <item>发送恶意扣费短信</item>
+        <item>无法正常卸载</item>
+        <item>链接恶意扣费网站</item>
+        <item>盗取用户个人信息</item>
+        <item>诱导扣费操作</item>
+        <item>恶意群发短信</item>
+        <item>卸载时有恶意行为</item>
+        <item>默认开机自启动</item>
+        <item>默认联网无提示</item>
+        <item>含有收费项目</item>
+        <item>木马软件</item>
+        <item>修改快捷方式和主页</item>
+        <item>影响安全软件使用</item>
+        <item>本软件为google测试证书签名，该证书下已发现大量木马和恶意软件，请谨慎使用</item>
+        <item>使用有风险的权限</item>
+        <item>使用与软件本身属性不符的风险权限</item>
+        <item>有Push广告行为</item>
+        <item>有积分墙广告</item>
+        <item>普通广告</item>
+    </string-array>
+</resources>

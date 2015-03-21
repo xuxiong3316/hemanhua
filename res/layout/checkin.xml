@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmdm.app.view.CheckInScrollView android:id="@id/scrollView" android:background="@color/white" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/flCheckinHead" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <com.cmdm.app.view.CustomerImageView android:id="@id/civBanner" android:background="@drawable/banner_540_405" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:gravity="center" android:id="@id/tvDate" android:background="@drawable/btn_left" android:padding="3.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:text="周一" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/btn_cent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:id="@id/tvCheckinInfo" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没登陆请先登录" />
+                    <TextView android:id="@id/tvMonthCheckinInfo" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0px" android:text="还没登陆请先登录" />
+                    <View android:layout_width="wrap_content" android:layout_height="4.0px" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tvCheckin" android:background="@drawable/checkin_btn_seletor" android:padding="3.0dip" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="每日签到" style="@style/title_btn_text" />
+                <TextView android:gravity="center" android:id="@id/tvLottery" android:background="@drawable/lottery_btn_seletor" android:padding="3.0dip" android:visibility="gone" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="抽奖" style="@style/title_btn_text" />
+                <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/checkin_tip" android:gravity="center" android:id="@id/tvCheckinHad" android:background="@drawable/checkined_btn_seletor" android:padding="3.0dip" android:visibility="gone" android:clickable="false" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="今日已签到" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rlCalendarHead" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/flCheckinHead">
+            <ImageView android:id="@id/ivPreMonth" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/left_btn_seletor" android:layout_weight="0.0" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tvShowTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="2013-10" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivNextMonth" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_btn_seletor" android:layout_weight="0.0" />
+        </LinearLayout>
+        <View android:id="@id/viewline" android:background="@color/checkin_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rlCalendarHead" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llWeek" android:background="@color/background_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_below="@id/viewline">
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周日" android:layout_weight="1.0" style="@style/checkin_cal_norml" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周一" android:layout_weight="1.0" style="@style/checkin_cal" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周二" android:layout_weight="1.0" style="@style/checkin_cal" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周三" android:layout_weight="1.0" style="@style/checkin_cal" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周四" android:layout_weight="1.0" style="@style/checkin_cal" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周五" android:layout_weight="1.0" style="@style/checkin_cal" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="周六" android:layout_weight="1.0" style="@style/checkin_cal_norml" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llCalendarPad" android:background="@color/background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llWeek">
+            <ViewFlipper android:layout_gravity="center" android:id="@id/viewFlipper" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/list_popularity" android:gravity="center_vertical" android:id="@id/tvTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" />
+            <View android:background="@color/checkin_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlPrize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llCalendarPad">
+            <Button android:gravity="center" android:id="@id/btnPrize" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="中奖名单" android:layout_alignParentRight="true" style="@style/Btn.Line.Orange" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/list_category" android:id="@id/tvChenkinguizhe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="签到活动规则：" android:layout_alignBottom="@id/btnPrize" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/list_popularity" android:id="@id/tvChenkinDescri" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/rlPrize" />
+    </RelativeLayout>
+</com.cmdm.app.view.CheckInScrollView>

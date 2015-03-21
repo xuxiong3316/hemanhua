@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_mmprogress_width">260.0dip</dimen>
+    <dimen name="rc_exit_padding">10.0dip</dimen>
+    <dimen name="rc_player_marginleft">25.0dip</dimen>
+</resources>

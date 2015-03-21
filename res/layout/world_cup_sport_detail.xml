@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/worldCupScrollView" android:background="#ff1bc7d3" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llTopLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imgActivityBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/worldcupsport_bg_top" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffff847" android:id="@id/tvSelectChampionNum" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999999" android:shadowColor="#88000000" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tvSelectChampionDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="人选择了'冠军'球队" android:shadowColor="#88000000" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffff847" android:id="@id/tvPlayGuessingNum" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999999" android:shadowColor="#88000000" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tvPlayGuessingDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="人正在玩竞猜" android:shadowColor="#88000000" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffff847" android:id="@id/tvPlaySpotKickNum" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999999" android:shadowColor="#88000000" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tvPlaySpotKickDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="人正在玩点球" android:shadowColor="#88000000" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@drawable/worldcupsport_line_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="12.0dip">
+                    <TextView android:textSize="16.0sp" android:id="@id/tvRuleContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动规则内容" android:shadowColor="#88000000" android:lineSpacingExtra="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                    <ImageView android:id="@id/imgShare" android:background="@drawable/btm_worldcup_share_seletor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/imgJoin" android:background="@drawable/btm_worldcup_join_seletor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@drawable/worldcupsport_line_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:background="@drawable/worldcup_more_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/llTopLayout" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/imgBallIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/worldcup_more_ball" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#fffff847" android:gravity="center_vertical" android:id="@id/tvSubjectBanner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多世界杯动漫内容，马上去看" android:drawableRight="@drawable/worldcup_arrow" android:layout_toRightOf="@id/imgBallIcon" android:layout_alignTop="@id/imgBallIcon" android:layout_alignBottom="@id/imgBallIcon" />
+            </RelativeLayout>
+            <ImageView android:id="@id/imgSkip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_worldcup_pass" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

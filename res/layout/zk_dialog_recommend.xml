@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/title" android:background="@drawable/zk_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/zk_login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <TextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="选择您要的分享" style="@style/zk_dialog_text_style" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/share_sina_layout" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/share_sina_btn" android:background="@drawable/zk_share_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/share_sina_tv" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="@string/zk_share2sina" style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/share_tencent_layout" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/share_tencent_btn" android:background="@drawable/zk_share_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/share_tencent_tv" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="@string/zk_share2tencent" style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/share_renren_layout" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/share_renren_btn" android:background="@drawable/zk_share_renren" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/share_renren_tv" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="人人网     " style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/layout_dialog_commend_sms" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/sms_button" android:background="@drawable/zk_sms_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/dialog_commend_sms" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="@string/zk_share2sms" style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/layout_dialog_commend_mms" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/mms_button" android:background="@drawable/zk_mms_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/dialog_commend_mms" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="@string/zk_share2mms" style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/share_more_layout" android:background="@drawable/zk_bg_smsandmms_btn" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <Button android:id="@id/share_more_btn" android:background="@drawable/zk_share_more" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center" android:id="@id/share_more_tv" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="32.0dip" android:text="@string/zk_share2more" style="@style/zk_MyText" />
+                </LinearLayout>
+                <View android:background="@drawable/zk_share_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:id="@id/commend_exit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                    <Button android:id="@id/dialog_commend_exit" android:background="@drawable/zk_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_txt_btn_cancel" android:layout_weight="1.0" style="@style/zk_MyText3" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

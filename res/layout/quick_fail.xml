@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/Title" android:background="@drawable/bar_top" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:ellipsize="marquee" android:gravity="left" android:id="@id/title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/quick_login_fail_title" android:scrollHorizontally="true" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/detail_title_text" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="@color/alltext_color" android:id="@id/txt_fail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/quick_login_fail_name" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/alltext_color" android:id="@id/txt_fail_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/quick_login_fail_one" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/alltext_color" android:id="@id/txt_fail_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quick_login_fail_two" />
+            <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="21.0dip" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/absoluteLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

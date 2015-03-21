@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisunflytone.framwork.widget.pulltorefresh.PullToRefreshListView android:id="@id/history_grid_listview" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/null_selector" android:cacheColorHint="@color/transparent" android:divider="@null" ptr:ptrMode="pullFromStart" ptr:ptrAnimationStyle="flip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" />

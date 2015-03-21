@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/trans_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSex" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0dip" android:gravity="center_vertical" android:background="@drawable/bar_top" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="设置性别" />
+        <RelativeLayout android:id="@id/rlMan" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <ImageView android:id="@id/ivMan" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_sex_m" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/tab_text_default" android:id="@id/tvMan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="高富帅" android:layout_toRightOf="@id/ivMan" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/cbMan" android:background="@drawable/btn_radio_def" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="8.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/dividing_lines" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <RelativeLayout android:id="@id/rlWoman" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <ImageView android:id="@id/ivWoman" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_sex_f" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/tab_text_default" android:id="@id/tvMan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="白富美" android:layout_toRightOf="@id/ivWoman" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/cbWoman" android:background="@drawable/btn_radio_def" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="8.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/dividing_lines" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <RelativeLayout android:id="@id/rlUnknow" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <ImageView android:id="@id/ivUnknow" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_sex_n" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/tab_text_default" android:id="@id/tvUnknow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="不明生物" android:layout_toRightOf="@id/ivUnknow" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/cbUnknow" android:background="@drawable/btn_radio_def" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="8.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/dividing_lines" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/tab_text_default" android:gravity="center" android:id="@id/tvCancle" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:background="@drawable/bar_tab_drop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:layout_gravity="center" android:id="@id/category_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/loading_small" />
+        <include android:layout_gravity="center" android:id="@id/category_reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/load_failed_small" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/category_pop_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

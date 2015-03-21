@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/Title" android:background="@drawable/bar_top" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/backButton" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TitleBackButton" />
+    <Button android:gravity="center" android:id="@id/btn_action" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:minWidth="80.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/title_btn_text" />
+    <ImageView android:id="@id/line" android:background="@drawable/line_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_toLeftOf="@id/btn_action" android:layout_centerVertical="true" />
+    <com.hisunflytone.framwork.widget.ScrollForeverTextView android:ellipsize="marquee" android:gravity="left|center" android:id="@id/detailTitle" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_toLeftOf="@id/line" android:layout_toRightOf="@id/backButton" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/detail_title_text" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/null_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlPluginManager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip">
+        <Button android:id="@id/btnInstall" android:focusable="false" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Btn.Line.Orange" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/btnInstall" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@id/tvPluginName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/color_primary_sp18" />
+            <TextView android:textColor="@color/red" android:id="@id/tvPluginIntro" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/detail_grid_item_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

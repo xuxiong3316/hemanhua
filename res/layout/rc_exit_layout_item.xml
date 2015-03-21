@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/parent_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/grid_item_ib" android:background="#50888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_ad1" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/gallery_waiting" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/grid_item_animationName_bg" android:background="#7f000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/rc_white" android:ellipsize="marquee" android:gravity="center" android:id="@id/grid_item_animationName" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@integer/rc_gallery_img_width" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </RelativeLayout>
+</FrameLayout>

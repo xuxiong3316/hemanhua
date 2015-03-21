@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/listview_item_selector" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="48.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="接收通知提醒" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color_primary_sp18" />
+        <CheckBox android:id="@id/cbReceviceNotice" android:background="@drawable/checkbox_switch_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:button="@color/transparent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="48.0dip">
+        <TextView android:id="@id/tvOpusNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="更新通知" android:layout_alignParentLeft="true" style="@style/color_primary_sp18" />
+        <TextView android:id="@id/setting_opus_new_system_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="收藏的作品更新消息" android:layout_below="@id/tvOpusNotice" android:layout_alignParentLeft="true" style="@style/color_help_sp12" />
+        <CheckBox android:id="@id/cbOpusNotice" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="48.0dip">
+        <TextView android:id="@id/tvPushNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="推送通知" android:layout_alignParentLeft="true" style="@style/color_primary_sp18" />
+        <TextView android:id="@id/setting_opus_new_sms_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="首发或精品推送信息" android:layout_below="@id/tvPushNotice" android:layout_alignParentLeft="true" style="@style/color_help_sp12" />
+        <CheckBox android:id="@id/cbPushNotice" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

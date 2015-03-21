@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_channel_theme_ex" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginTop="12.0dip" android:layout_toRightOf="@id/icon">
+        <TextView android:textSize="18.0dip" android:textColor="#ff444444" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主题" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff80c300" android:gravity="center_vertical" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="已启用" android:drawableLeft="@drawable/ic_status_enabled" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="#ff444444" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="各种趣味解锁和动漫风格手机主题，让你的手机与众不同" android:layout_below="@id/icon" />
+    <Button android:id="@id/open_channel" android:background="@drawable/basic_btn_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="24.0dip" android:text="使用主题" android:layout_below="@id/desc" style="@style/chnl_manager_use_style" />
+    <Button android:id="@id/switcher" android:background="@drawable/red_btn_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:text="停用" android:layout_below="@id/open_channel" style="@style/chnl_manager_start_stop_style" />
+</RelativeLayout>

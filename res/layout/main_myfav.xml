@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:background="@drawable/bar_top" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/backButton" android:visibility="visible" android:src="@drawable/ic_top_navi" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TitleBackButton" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/my_favorite" android:layout_toRightOf="@id/backButton" android:layout_centerVertical="true" style="@style/detail_title_text" />
+        <ImageView android:id="@id/actionbar_shake" android:visibility="gone" android:src="@drawable/ic_top_add" android:layout_toLeftOf="@id/actionbar_add" style="@style/title_image_button" />
+        <ImageView android:id="@id/actionbar_add" android:src="@drawable/ic_top_add" android:layout_toLeftOf="@id/actionbar_delete" style="@style/title_image_button" />
+        <ImageView android:id="@id/actionbar_delete" android:src="@drawable/ic_top_del" android:layout_alignParentRight="true" style="@style/title_image_button" />
+        <ImageView android:id="@id/actionbar_cancel" android:visibility="gone" android:src="@drawable/ic_top_deldone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/title_image_button" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llSign" android:background="@drawable/ad_lottery" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/title_bar">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvCheckinDesc" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="签到送积分，连续签到更多奖励" android:singleLine="true" android:shadowColor="#88000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/tvCheckinAction" android:background="@drawable/fav_checkin_btn_selector2" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="签到" style="@style/title_btn_text" />
+    </LinearLayout>
+    <com.cmdm.android.view.drag.DragLayer android:id="@id/draglayer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llSign" android:layout_alignParentBottom="true">
+        <com.cmdm.android.view.drag.DragListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:id="@id/myfav_grid" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/null_selector" android:cacheColorHint="@color/transparent" android:numColumns="3" android:divider="@null" android:dividerHeight="0.0dip" />
+    </com.cmdm.android.view.drag.DragLayer>
+</RelativeLayout>

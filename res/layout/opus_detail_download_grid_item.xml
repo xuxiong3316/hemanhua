@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginRight="2.0dip" android:max="100" android:progress="0" style="@style/OpusProgressBarStyleHorizontal" />
+        <ImageView android:id="@id/download_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_centerInParent="true" android:contentDescription="下载项" />
+        <TextView android:gravity="center" android:id="@id/txt_content_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="第23话" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/download_chapter_grid_item_text" />
+        <ImageView android:id="@id/status" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_below="@id/txt_content_name" android:layout_alignParentRight="true" android:contentDescription="是否已下载" />
+        <CheckBox android:enabled="false" android:id="@id/cb" android:background="@drawable/checkbox_small_selector" android:focusable="false" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="2.0dip" android:button="@null" android:layout_below="@id/txt_content_name" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:gravity="top|center" android:id="@id/txt_content_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="7.7MB" android:layout_below="@id/layout_item" style="@style/detail_grid_item_info_text" />
+</RelativeLayout>

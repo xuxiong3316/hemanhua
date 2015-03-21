@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_exitsystem" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/zk_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="@color/zk_exit_text_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:text="@string/zk_exitsystemtext" />
+            <RelativeLayout android:gravity="center" android:id="@id/recommed_layout" android:layout_width="wrap_content" android:layout_height="85.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <LinearLayout android:id="@id/last_layout" android:clickable="true" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/zk_wf">
+                    <ImageView android:layout_gravity="center" android:id="@id/last_image" android:background="@drawable/zk_btn_selector_last" android:duplicateParentState="true" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/zk_ww" />
+                </LinearLayout>
+                <com.android.cartoonplayer.widget.MyGallery android:id="@id/gallery_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:spacing="22.0dip" android:layout_toLeftOf="@id/next_layout" android:layout_toRightOf="@id/last_layout" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/next_layout" android:layout_toRightOf="@id/last_layout">
+                    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layout_playover_tuijian1" android:background="@drawable/zk_exit_test_image" android:layout_width="60.0dip" android:layout_height="85.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/textview_playover_tuijian1" android:background="@drawable/zk_bg_textview_tuijian" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Android" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layout_playover_tuijian2" android:background="@drawable/zk_exit_test_image" android:layout_width="60.0dip" android:layout_height="85.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/textview_playover_tuijian2" android:background="@drawable/zk_bg_textview_tuijian" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Android" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/move_over3" android:background="@drawable/zk_exit_test_image" android:layout_width="60.0dip" android:layout_height="85.0dip">
+                        <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/move_textview_over3" android:background="@drawable/zk_bg_textview_tuijian" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Android" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/next_layout" android:clickable="true" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/zk_wf">
+                    <ImageView android:layout_gravity="center" android:id="@id/next_image" android:background="@drawable/zk_btn_selector_next" android:duplicateParentState="true" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/zk_ww" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/exit_layout_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_collect" android:background="@drawable/zk_bg_item_back" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_shouchang" android:background="@drawable/zk_bg_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zk_exit_collect" android:drawableTop="@drawable/zk_btn_selector_collect2" style="@style/zk_MyExitBtn" />
+                    <TextView android:gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="收藏" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_share" android:background="@drawable/zk_bg_item_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_fengxiang" android:background="@drawable/zk_bg_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zk_exit_share" android:drawableTop="@drawable/zk_btn_selector_share" style="@style/zk_MyExitBtn" />
+                    <TextView android:gravity="center_horizontal" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分享" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_comment" android:background="@drawable/zk_bg_item_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_comment" android:background="@drawable/zk_bg_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zk_exit_comment" android:drawableTop="@drawable/zk_btn_selector_comment" style="@style/zk_MyExitBtn" />
+                    <TextView android:gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="评论" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_download" android:background="@drawable/zk_bg_item_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_download" android:background="@drawable/zk_bg_item_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zk_exit_nextplay" android:drawableTop="@drawable/zk_btn_selector_nextplay" style="@style/zk_MyExitBtn" />
+                    <TextView android:gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zk_nextplay" style="@style/zk_MyExitText" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/zk_exit_divide" android:layout_width="fill_parent" style="@style/zk_view_style" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <RelativeLayout android:gravity="center" android:id="@id/bg_layout" android:clickable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true">
+                    <CheckBox android:id="@id/exit_checkbox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/zk_checkbox_style" />
+                </RelativeLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/zk_exitsystem" android:layout_toRightOf="@id/bg_layout" android:layout_centerVertical="true" style="@style/zk_dialog_text_style" />
+            </RelativeLayout>
+            <View android:background="@color/zk_exit_divide" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@drawable/zk_exit_textcolor1_sel" android:id="@id/exitView_btn_cancel" android:background="@drawable/zk_exit_btn_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_txt_btn_cancel" android:layout_weight="1.0" style="@style/zk_MyExitText3" />
+                <View android:background="@color/zk_exit_divide" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <Button android:textColor="@drawable/zk_exit_textcolor_sel" android:id="@id/exitView_btn_ok" android:background="@drawable/zk_exit_btnok_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_txt_btn_confirm" android:layout_weight="1.0" style="@style/zk_MyExitText3" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/exit_layout_anymodel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_share_any" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_fengxiang_any" android:background="@drawable/zk_bg_fengxiang_exitmenu_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分享" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_download_any" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_download_any" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="下载" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_collect" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_shouchang" android:background="@drawable/zk_btn_selector_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="收藏" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_comment" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_comment" android:background="@drawable/zk_btn_selector_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="评论" style="@style/zk_MyExitText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/exit_layout_logout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_share_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_fengxiang_out" android:background="@drawable/zk_bg_fengxiang_exitmenu_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分享" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_download" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_download" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="下载" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_collect" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_shouchang" android:background="@drawable/zk_bg_shouchang_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="收藏" style="@style/zk_MyExitText" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_exitmenu_comment" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/button_menu_comment" android:background="@drawable/zk_btn_selector_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="评论" style="@style/zk_MyExitText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

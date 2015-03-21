@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="20.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/edNick" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:hint="@string/txt_default_username" android:maxLength="12" android:drawableLeft="@drawable/ic_32_user" android:imeOptions="actionNone" style="@style/color444444sp16" />
+    <TextView android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="可输入8个字" android:maxLength="8" android:layout_below="@id/edNick" android:layout_alignParentRight="true" style="@style/color_help_sp12" />
+    <Button android:id="@id/btnSure" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="32.0dip" android:text="确定" android:layout_below="@id/tvTip" style="@style/Btn.Line.Orange.NormalSize" />
+</RelativeLayout>

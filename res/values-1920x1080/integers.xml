@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rc_finish_dialog_width">720</integer>
+    <integer name="rc_gallery_img_width">180</integer>
+    <integer name="rc_gallery_img_height">240</integer>
+    <integer name="rc_gallery_spacing">30</integer>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/timer_shaft_group_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/expandablel_listview_item_seletor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip">
+        <com.cmdm.app.view.CustomerImageView android:id="@id/imgCaiYinChildIcon" android:paddingLeft="5.0dip" android:layout_width="48.0dip" android:layout_height="64.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/favorite_simple" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/rlRightLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <CheckBox android:gravity="right" android:id="@id/cbxCaiYinDel" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/caiyin_checkbox_selector" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llCaiYinContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toLeftOf="@id/rlRightLayout" android:layout_toRightOf="@id/imgCaiYinChildIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ff3d4245" android:id="@id/tvCaiYinWord" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十" android:drawablePadding="4.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff7f868d" android:id="@id/tvCaiYinDisplayContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="自展示同时推送给群组【哈利路亚耶路撒冷主教】" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff7f868d" android:id="@id/tvCaiYinSetTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="2014-05-18 10:23" />
+        </LinearLayout>
+        <View android:id="@id/childLineViewWithNoGreeting" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/imgCaiYinChildIcon" />
+        <View android:id="@id/childLineViewWwithGreeting" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/llCaiYinContent" />
+    </RelativeLayout>
+</RelativeLayout>

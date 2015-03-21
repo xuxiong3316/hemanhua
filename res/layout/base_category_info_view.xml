@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.CustomScollLoadListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:id="@id/category_info_listview" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/category_list_item_bg" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <include android:layout_gravity="center" layout="@layout/no_data_layout" />
+</FrameLayout>

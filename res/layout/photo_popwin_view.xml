@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/tab_text_default" android:id="@id/btnTakePhoto" android:background="@drawable/basic_btn_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="拍照" />
+    <Button android:textColor="@color/tab_text_default" android:id="@id/btnPickPhoto" android:background="@drawable/basic_btn_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="从相册选择" android:layout_below="@id/btnTakePhoto" />
+    <View android:id="@id/view" android:background="@drawable/listview_divider_no_inset" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/btnPickPhoto" />
+    <TextView android:textColor="@color/tab_text_default" android:gravity="center" android:id="@id/tvPhotoCancle" android:background="@drawable/category_list_item_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="取消" android:layout_below="@id/view" />
+</RelativeLayout>

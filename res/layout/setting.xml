@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="18.0dip" android:text="@string/txt_setting_one_title" style="@style/color_sub_sp16" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlAutoLogin" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvAutoLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_auto_login" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <Button android:id="@id/btnAutoLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SettingsSwitchButton" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlNotification" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_notice_set" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <Button android:id="@id/btnNotification" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SettingsSwitchButton" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/bg_highlight" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/downloadStorageMgr" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:id="@id/download_Storage_Show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting_storage" style="@style/color444444sp16" />
+                        <TextView android:id="@id/download_Storage_Addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting_exit_clear_tip" style="@style/color_help_sp12" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/ic_arrow_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/download_prompt" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvdownload_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_download_prompt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <Button android:id="@id/ivdownload_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SettingsSwitchButton" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlDownloadWifi" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvDownloadWifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_download_mobile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <Button android:id="@id/btnDownloadWifi" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SettingsSwitchButton" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlPluginManager" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_plugin_manager" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <ImageView android:background="@drawable/ic_arrow_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlAnimationDownloadSet" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="动画画质设置" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <ImageView android:id="@id/ivArrowRight" android:background="@drawable/ic_arrow_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/tvAnimationQuality" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/anime_quality_sd" android:layout_toLeftOf="@id/ivArrowRight" android:layout_centerVertical="true" style="@style/color222222sp16" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlClear" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvClear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <TextView android:enabled="false" android:id="@id/tvCache" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/color_help_sp18" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlExitAndAutoClearCache" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:id="@id/tvExitAndAutoClearCache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting_exit_clear" style="@style/color444444sp16" />
+                        <TextView android:id="@id/tvClearTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting_exit_clear_tip" style="@style/color_help_sp12" />
+                    </LinearLayout>
+                    <Button android:id="@id/btnExitAndAutoClearCache" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SettingsSwitchButton" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/bg_highlight" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rlHelp" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_using_help" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <ImageView android:background="@drawable/ic_arrow_list" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlFeedback" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvFeedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_feed_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <ImageView android:background="@drawable/ic_arrow_list" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlUpdate" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_check" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <TextView android:gravity="right" android:id="@id/tvVersion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/tvUpdate" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/versionCheckTip" />
+                    <ImageView android:id="@id/imgLoading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/loading_juhua" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlShare" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:id="@id/tvShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_share" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <TextView android:gravity="right" android:id="@id/tvche" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/tvShare" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/versionCheckTip" />
+                    <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/tvShare" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rlAbout" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_setting_about" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                    <ImageView android:background="@drawable/ic_arrow_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

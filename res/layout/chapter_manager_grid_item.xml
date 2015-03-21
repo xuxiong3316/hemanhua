@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:max="100" android:progress="0" style="@style/OpusProgressBarStyleHorizontal" />
+        <ImageView android:id="@id/download_item" android:background="@drawable/directory_btn_blue_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:contentDescription="下载项" />
+        <TextView android:id="@id/txt_content_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="第23话" android:layout_centerInParent="true" style="@style/detail_grid_item_text" />
+        <ImageView android:id="@id/is_lastview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="是否最后一次观看" />
+        <ImageView android:id="@id/is_free" android:layout_width="30.0dip" android:layout_height="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="免费或已订购" />
+        <ImageView android:id="@id/is_check" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/check_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="是否选中" />
+        <ImageView android:id="@id/download_status" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/queue_ico" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="下载状态" />
+    </RelativeLayout>
+    <TextView android:id="@id/txt_content_size_and_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="3.3MB" style="@style/detail_grid_item_info_text" />
+</LinearLayout>

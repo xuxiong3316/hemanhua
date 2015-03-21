@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flHotsportImg" android:background="@drawable/face_def_bg" android:layout_width="105.0dip" android:layout_height="140.0dip">
+        <com.cmdm.app.view.CustomerImageView android:id="@id/ivSharePic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/favorite_simple" android:scaleType="fitXY" />
+        <View android:background="@drawable/gridview_item_seletor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/tvShareNum" android:background="@drawable/times_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="123次" style="@style/colorffffffsp11" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llHotsportText" android:background="@drawable/btn_line_green_selector" android:layout_width="105.0dip" android:layout_height="36.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/ic_share_1" />
+        <TextView android:enabled="false" android:textColor="@color/btn_green_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvShareText" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

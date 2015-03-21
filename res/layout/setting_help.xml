@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@id/btn_newguide" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="查看新手指导" style="@style/Btn.Line.Orange.NormalSize" />
+        <Button android:gravity="center" android:id="@id/btn_feedback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="我要反馈" style="@style/Btn.Line.Orange.NormalSize" />
+    </LinearLayout>
+    <WebView android:id="@id/html_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llLayout" android:layout_alignParentTop="true" />
+</RelativeLayout>

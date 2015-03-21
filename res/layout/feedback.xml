@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmdm.app.view.FeedbackScrollView android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llAge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:gravity="right|center" android:layout_width="86.0dip" android:layout_height="wrap_content" android:text="年龄：" style="@style/listNameStyle" />
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tvAge" android:background="@drawable/selection_box_sl" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择" android:singleLine="true" android:layout_weight="1.0" style="@style/listNameStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="  (选填)" style="@style/listNameStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/llAge">
+            <TextView android:gravity="right" android:id="@id/tvQuestionType" android:layout_width="86.0dip" android:layout_height="wrap_content" android:text="问题类型：" style="@style/listNameStyle" />
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tvQuestion" android:background="@drawable/selection_box_sl" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="请选择" android:singleLine="true" android:layout_weight="1.0" style="@style/listNameStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="  (选填)" style="@style/listNameStyle" />
+        </LinearLayout>
+        <EditText android:textSize="16.0dip" android:gravity="top" android:id="@id/edit_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:hint="@string/txt_menu_feed_value" android:lines="@integer/feed_back_content_lines" android:singleLine="false" android:layout_below="@id/llQuestion" />
+        <TextView android:id="@id/txtDec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="可输入500个字" android:layout_below="@id/edit_content" android:layout_alignParentRight="true" style="@style/listNameStyle" />
+        <Button android:gravity="center" android:id="@id/btnSubmit" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="提交" android:layout_below="@id/txtDec" android:layout_centerHorizontal="true" style="@style/Btn.Line.Orange.NormalSize" />
+        <TextView android:id="@id/txtMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="欢迎加入漫迷体验群，您的建议对我们很重要：" android:layout_below="@id/btnSubmit" android:layout_centerHorizontal="true" style="@style/listNameStyle" />
+        <TextView android:id="@id/txtGroupNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ群：314950191     飞信群：84699153" android:layout_below="@id/txtMsg" android:layout_centerHorizontal="true" style="@style/listNameStyle" />
+    </RelativeLayout>
+</com.cmdm.app.view.FeedbackScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/tab_layout" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="@dimen/sub_tabs_height" android:layout_alignParentTop="true">
+        <com.hisunflytone.framwork.widget.ScrollTabWidget android:id="@id/scroll_tabs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/show_categories" android:layout_alignParentLeft="true" />
+        <ImageView android:background="@drawable/mask_tab" android:layout_width="18.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/show_categories" />
+        <ImageView android:id="@id/show_categories" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_filter_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

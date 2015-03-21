@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btns_bar" android:background="@drawable/qihoo360_btn_bottom_black_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/qihoo360_dialog_yes" android:layout_weight="1.0" style="@style/qihoo360_btn_bottom_black" />
+    <Button android:id="@id/btn_middle" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/qihoo360_dialog_cancel" android:layout_weight="1.0" style="@style/qihoo360_btn_bottom_black" />
+    <Button android:id="@id/btn_right" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/qihoo360_btn_default" android:layout_weight="1.0" style="@style/qihoo360_btn_bottom_black" />
+</LinearLayout>

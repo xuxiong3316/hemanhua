@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/title_height" layout="@layout/qbook_setting_title_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bri_pop_view" />
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@drawable/line" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fontsize_pop_view" />
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@drawable/listview_divider" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" layout="@layout/qbook_theme_pop_view" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/notice_bar" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hisunflytone.framwork.widget.VerticalPager android:id="@id/notice" android:background="#ff555555" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/notice_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/ic_del_ads" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

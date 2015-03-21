@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_bar_layout" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/channelGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/postorList" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="7.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.hisunflytone.framwork.BaseViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

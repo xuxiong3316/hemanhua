@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <TextView android:id="@id/tvCaiYinPicture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_caiyin_setting_caiyin_picture" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+            <Button android:id="@id/btnCaiYinSettingSwitch" android:background="@drawable/checkbox_switch_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SettingsSwitchButton" />
+            <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+            <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <RelativeLayout android:id="@id/rlCaiYinUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true">
+                <TextView android:id="@id/tvCaiYinUpdateWay" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_caiyin_setting_update_way" android:layout_alignParentTop="true" style="@style/color444444sp16" />
+                <TextView android:id="@id/tvCaiYinUpdateWayDescription" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/txt_caiyin_setting_update_way_description" android:layout_below="@id/tvCaiYinUpdateWay" style="@style/color_help_sp14" />
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/tvCaiYinUpdateWayDescription" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlCaiYinManuallyUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlCaiYinUpdate">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/txt_caiyin_setting_manually_update" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp16" />
+                <Button android:textSize="16.0dip" android:textColor="@drawable/btn_line_green_text_selector" android:id="@id/btnCaiYinManuallyUpdateNow" android:background="@drawable/btn_line_green_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:text="@string/txt_caiyin_setting_manually_update_now" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SettingsSwitchButton" />
+                <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlCaiYinAutomaticUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rlCaiYinManuallyUpdate">
+                <TextView android:id="@id/tvCaiYinAutomaticUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="5.0dip" android:text="@string/txt_caiyin_setting_automatic_update" android:layout_alignParentTop="true" style="@style/color444444sp16" />
+                <com.cmdm.app.view.MultilayerRadioGroup android:orientation="vertical" android:id="@id/rgCaiYinAutomaticUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tvCaiYinAutomaticUpdate">
+                    <RadioButton android:textSize="14.0dip" android:textColor="@color/text_sub" android:layout_gravity="center" android:id="@id/rbCaiYinAlwaysUpdateNow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_caiyin_setting_always_update_now" style="@style/CaiYinSettingsRadioButton" />
+                    <View android:id="@id/viewLineOne" android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <RadioButton android:textSize="14.0dip" android:textColor="@color/text_sub" android:layout_gravity="center" android:id="@id/rbCaiYinWLANNetworkUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_caiyin_setting_WLAN_network_update" style="@style/CaiYinSettingsRadioButton" />
+                    <View android:id="@id/viewLineTwo" android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/llCaiYinRegularlyUpdate" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/tvCaiYinRegularlyUpdate" android:paddingLeft="16.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_caiyin_setting_regularly_update" android:layout_weight="2.0" style="@style/color_sub_sp14" />
+                        <RadioButton android:textSize="12.0dip" android:textColor="@color/list_popularity" android:layout_gravity="center_vertical" android:id="@id/rbCaiYinRegularlyUpdate" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_caiyin_setting_two_hours_update" android:layout_weight="1.0" style="@style/CaiYinSettingsRadioButton" />
+                    </LinearLayout>
+                </com.cmdm.app.view.MultilayerRadioGroup>
+                <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_below="@id/rgCaiYinAutomaticUpdate" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

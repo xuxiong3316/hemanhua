@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dialog_title_bar" android:background="@drawable/qihoo360_dialog_factory_title" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dialog_factory_title_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/qihoo360_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/dialog_factory_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include android:id="@id/divider_top" layout="@layout/qihoo360_assist_divider" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/qihoo360_dialog_factory_bottom_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/dialog_factory_content" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ViewStub android:id="@id/dialog_factory_progressbar" android:layout="@layout/qihoo360_assist_dialog_msg_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/qihoo360_dialog_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/dialog_factory_msg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_single_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/single_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/qihoo360_listview_dialog" />
+            </LinearLayout>
+            <include layout="@layout/qihoo360_dialog_btns" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/qihoo360_listview_dialog" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

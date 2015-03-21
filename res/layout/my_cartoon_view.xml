@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rlMyCartoonHead" android:background="@drawable/img_wode" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <TextView android:ellipsize="end" android:id="@id/tvDesc" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="早上不起床，起床就上网。" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/colorffffffsp16" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llUserInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/tvDesc">
+                <TextView android:id="@id/tvNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想飞的胖子" style="@style/colorffffffsp20" />
+                <ImageView android:id="@id/ivUserSex" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_sex_m" />
+            </LinearLayout>
+            <com.cmdm.app.view.CustomerImageView android:id="@id/imgUser" android:background="@drawable/avatar_bg_128" android:padding="5.0dip" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:layout_above="@id/llUserInfo" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+            <include android:id="@id/loading" android:visibility="gone" layout="@layout/loading_small" />
+            <include android:id="@id/fail_and_retry" android:visibility="gone" layout="@layout/load_failed_small" />
+            <TextView android:gravity="center" android:id="@id/tvDate" android:background="@drawable/btn_left" android:padding="3.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:text="周一" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/tvCheckinInfo" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没登陆请先登录" />
+                <TextView android:id="@id/tvMonthCheckinInfo" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0px" android:text="还没登陆请先登录" />
+                <View android:layout_width="wrap_content" android:layout_height="4.0px" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@id/tvCheckin" android:background="@drawable/checkin_btn_seletor" android:padding="3.0dip" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="登录并签到 \n（送积分）" style="@style/title_btn_text" />
+            <TextView android:gravity="center" android:id="@id/tvLottery" android:background="@drawable/lottery_btn_seletor" android:padding="3.0dip" android:visibility="gone" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="抽奖" style="@style/title_btn_text" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvLookCheckin" android:background="@drawable/checkin_btn_seletor" android:padding="3.0dip" android:visibility="gone" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="签到详情" />
+        </LinearLayout>
+        <com.cmdm.app.view.ListViewInScrollView android:id="@id/partOneList" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:listSelector="@drawable/listview_item_selector" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0px" />
+        <com.cmdm.app.view.ListViewInScrollView android:id="@id/partTwoList" android:background="@drawable/listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:listSelector="@drawable/listview_item_selector" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0px" />
+    </LinearLayout>
+</ScrollView>

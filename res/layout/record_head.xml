@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffb7b7b7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/tvType" android:background="#ffdadada" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:text="类型" android:layout_weight="5.0" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/title_text_color" android:gravity="center" android:background="#ffdadada" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:text="数量" android:layout_weight="3.0" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/tvExchangeDate" android:background="#ffdadada" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:text="日期" android:layout_weight="5.0" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/valid_date_head" android:background="#ffdadada" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:text="有效期" android:layout_weight="6.0" />
+    </LinearLayout>
+    <TextView android:background="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginTop="-1.0dip" />
+</LinearLayout>

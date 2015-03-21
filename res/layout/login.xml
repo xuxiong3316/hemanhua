@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/activityBackgroundStyle">
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_help" android:gravity="left" android:id="@id/normal_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/tip_color" android:gravity="center_horizontal" android:id="@id/err_tip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text=" " />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/edt_Phone" android:background="@drawable/login_edit_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/edit_user_prompt" android:singleLine="true" android:drawableLeft="@drawable/ic_32_phone" android:drawablePadding="4.0dip" android:imeOptions="actionNext" style="@style/color444444sp16" />
+            <com.hisunflytone.framwork.widget.NoWatchEditText android:id="@id/edt_Pwd" android:background="@drawable/login_edit_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:hint="@string/edit_pwd_prompt" android:maxLength="12" android:digits="@string/edit_pwd_accept" android:drawableLeft="@drawable/ic_32_key" android:drawablePadding="4.0dip" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/color444444sp16" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip">
+            <Button android:id="@id/btn_register" android:background="@drawable/basic_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/register_button" android:layout_weight="1.0" style="@style/color444444sp16" />
+            <Button android:textSize="16.0dip" android:id="@id/btn_login" android:background="@drawable/org_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/txt_btn_login" android:layout_weight="1.0" style="@style/popTitleWhiteStyle" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@drawable/login_link_selector" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/getpwd_textview" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:text="@string/txt_getpwd" android:drawableLeft="@drawable/ic_what" android:drawablePadding="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <Button android:id="@id/btn_login_sms" android:background="@drawable/org_btn_selector" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/login_sms_button" android:layout_weight="1.0" style="@style/popTitleWhiteStyle" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/login_hint_1" style="@style/color888888sp12" />
+    </LinearLayout>
+</ScrollView>

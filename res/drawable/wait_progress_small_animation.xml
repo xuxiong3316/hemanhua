@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:visible="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_1" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_2" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_3" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_4" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_5" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_6" android:clipOrientation="horizontal" />
+    </item>
+    <item android:duration="100">
+        <clip android:gravity="center" android:drawable="@drawable/loading_m_7" android:clipOrientation="horizontal" />
+    </item>
+</animation-list>

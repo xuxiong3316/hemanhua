@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="vertical" android:id="@id/rgCaiYinRegularlyUpdate" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RadioButton android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/txt_caiyin_setting_two_hours_update" android:drawableRight="@drawable/radio_checkbox_btn_seletor" style="@style/color_primary_sp16" />
+    <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RadioButton android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/txt_caiyin_setting_time_update" android:drawableRight="@drawable/radio_checkbox_btn_seletor" style="@style/color_primary_sp16" />
+    <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RadioButton android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/txt_caiyin_setting_once_a_day_update" android:drawableRight="@drawable/radio_checkbox_btn_seletor" style="@style/color_primary_sp16" />
+    <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RadioGroup>

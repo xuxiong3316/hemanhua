@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="vertical" android:id="@id/intervalView" android:background="@drawable/bar_list_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/opus_cell_list_1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_recmd_list_cell" />
+        <include layout="@layout/item_recmd_list_cell" />
+        <include layout="@layout/item_recmd_list_cell" />
+    </LinearLayout>
+</LinearLayout>

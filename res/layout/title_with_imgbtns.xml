@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/titlebar" android:background="@drawable/bar_top" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="left|center" android:id="@id/backButton" style="@style/TitleBackButton" />
+    <com.hisunflytone.framwork.widget.ScrollForeverTextView android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/detail_title_text" />
+</LinearLayout>

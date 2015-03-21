@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hisunflytone.framwork.widget.ScrollTabWidget android:layout_gravity="top" android:id="@id/tabs" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="@dimen/sub_tabs_height" />
+    <android.support.v4.view.ViewPager android:layout_gravity="top" android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/sub_tabs_height" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rc_finish_dialog_width">300</integer>
+    <integer name="rc_gallery_img_width">90</integer>
+    <integer name="rc_gallery_img_height">120</integer>
+    <integer name="rc_gallery_spacing">20</integer>
+    <integer name="zk_finish_dialog_width">300</integer>
+    <integer name="zk_gallery_img_width">100</integer>
+    <integer name="zk_gallery_img_height">120</integer>
+    <integer name="zk_gallery_spacing">22</integer>
+    <integer name="zk_gallery_spacing_480800">8</integer>
+    <integer name="feed_back_content_lines">7</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+</resources>

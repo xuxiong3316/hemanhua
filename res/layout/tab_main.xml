@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/main_tabs_height" />
+    <TabWidget android:layout_gravity="bottom" android:id="@android:id/tabs" android:background="@drawable/panel_btm" android:layout_width="fill_parent" android:layout_height="@dimen/main_tabs_height" />
+</TabHost>

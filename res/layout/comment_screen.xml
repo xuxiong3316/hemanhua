@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_relativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@drawable/panel_btm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/face" android:layout_width="60.0dip" android:layout_height="@dimen/bottom_panel_height" android:src="@drawable/ic_face_selector" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/btn_text_selector" android:gravity="center" android:id="@id/send_comment" android:layout_width="60.0dip" android:layout_height="@dimen/bottom_panel_height" android:text="@string/send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.cmdm.app.view.CopyAndPasteEmojiEditText android:textColorHint="#ffb2b2b2" android:id="@id/comment_text" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip" android:hint="@string/comment_hint" android:maxLines="2" android:maxLength="200" android:layout_toLeftOf="@id/send_comment" android:layout_toRightOf="@id/face" android:layout_centerVertical="true" style="@style/color_primary_sp16" />
+        </RelativeLayout>
+        <include android:id="@id/emoji_panel" android:visibility="gone" layout="@layout/emoji_panel" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/widget32" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/comment_layout" android:layout_alignParentTop="true">
+        <com.cmdm.app.view.CustomScollLoadListView android:scrollbarStyle="outsideOverlay" android:id="@id/comment_listview" android:paddingTop="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/null_selector" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+        <TextView android:textSize="15.0dip" android:gravity="center" android:id="@id/no_comment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无评论，快来抢沙发……" />
+    </FrameLayout>
+</RelativeLayout>

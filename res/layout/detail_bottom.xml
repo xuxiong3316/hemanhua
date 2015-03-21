@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bar_btm" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_dir" android:src="@drawable/ic_list" style="@style/QbookMenuItem" />
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    <ImageView android:id="@id/img_night" android:src="@drawable/ic_sun" style="@style/QbookMenuItem" />
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    <ImageView android:id="@id/img_setting" android:src="@drawable/ic_set" style="@style/QbookMenuItem" />
+</LinearLayout>

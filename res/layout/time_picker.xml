@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.cmdm.common.util.PickerView android:id="@id/pvYear" android:layout_width="80.0dip" android:layout_height="200.0dip" />
+        <TextView android:textSize="21.0sp" android:textColor="#ff3d4245" android:id="@id/minute_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="年" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/mask_tab_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.cmdm.common.util.PickerView android:id="@id/pvMonth" android:layout_width="80.0dip" android:layout_height="200.0dip" />
+        <TextView android:textSize="21.0sp" android:textColor="#ff3d4245" android:id="@id/second_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="月" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

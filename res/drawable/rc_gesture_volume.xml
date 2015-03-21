@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rc_ic_dialog_volume0" android:maxLevel="0" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume1" android:maxLevel="1" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume2" android:maxLevel="2" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume3" android:maxLevel="3" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume4" android:maxLevel="4" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume5" android:maxLevel="5" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume6" android:maxLevel="6" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume7" android:maxLevel="7" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume8" android:maxLevel="8" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume9" android:maxLevel="9" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume10" android:maxLevel="10" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume11" android:maxLevel="11" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume12" android:maxLevel="12" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume13" android:maxLevel="13" />
+    <item android:drawable="@drawable/rc_ic_dialog_volume14" android:maxLevel="14" />
+</level-list>

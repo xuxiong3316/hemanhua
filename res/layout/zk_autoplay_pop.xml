@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/exit_layout_login" android:background="#d6171819" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_menu_min" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/button_menu_min" android:background="@drawable/zk_auto_reduce_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/zk_MyAutoBtn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_menu_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/button_menu_num" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3s" style="@style/zk_MyAutoBtn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_menu_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/button_menu_max" android:background="@drawable/zk_auto_increase_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/zk_MyAutoBtn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_menu_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/button_menu_stop" android:background="@drawable/zk_auto_stop_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/zk_MyAutoBtn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

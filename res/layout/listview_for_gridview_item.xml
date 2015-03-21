@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/griditem" android:background="@color/background_color" android:paddingLeft="@dimen/channel_list_item_padding_h" android:paddingRight="@dimen/channel_list_item_padding_h" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top|center" android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/flHomePageItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/flImg0" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.cmdm.app.view.CustomerImageView android:id="@id/ivOpusImg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|left|center" android:id="@id/ivTagValue0" android:background="@drawable/bg_face_text" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="21.0dip" android:text="更新之100话" android:singleLine="true" style="@style/colorffffffsp14" />
+            <View android:id="@id/opusImgFg0" android:background="@drawable/gridview_item_seletor" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/rlItem1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/list_category" android:id="@id/tvRank" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:ellipsize="end" android:id="@id/tvOpusName" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/color_primary_sp14" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top|center" android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/flHomePageItem1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/flImg1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.cmdm.app.view.CustomerImageView android:id="@id/ivOpusImg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|left|center" android:id="@id/ivTagValue1" android:background="@drawable/bg_face_text" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="21.0dip" android:text="更新之100话" android:singleLine="true" style="@style/colorffffffsp14" />
+            <View android:background="@drawable/gridview_item_seletor" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/rlItem2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/list_category" android:id="@id/tvRank1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:ellipsize="end" android:id="@id/tvOpusName1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/color_primary_sp14" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top|center" android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/flHomePageItem2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/flImg2" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.cmdm.app.view.CustomerImageView android:id="@id/ivOpusImg2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|left|center" android:id="@id/ivTagValue2" android:background="@drawable/bg_face_text" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="21.0dip" android:text="100话全" android:singleLine="true" style="@style/colorffffffsp14" />
+            <View android:background="@drawable/gridview_item_seletor" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/rlItem3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/list_category" android:id="@id/tvRank2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:ellipsize="end" android:id="@id/tvOpusName2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/color_primary_sp14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

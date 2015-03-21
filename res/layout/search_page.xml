@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.hisunflytone.android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/no_opus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/mm_banner" android:layout_alignParentTop="true">
+        <TextView android:background="@drawable/error_ico" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对不起，没有找到相关内容，\n我们会尽快收录的！" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/recommend" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/mm_banner" android:layout_alignParentTop="true">
+        <TextView android:textSize="17.0dip" android:textColor="#ffee1155" android:layout_gravity="center" android:id="@id/tv_07" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_01" android:layout_width="185.0dip" android:layout_height="185.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffaacc66" android:id="@id/tv_02" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="19.0dip" android:textColor="#ff1616aa" android:id="@id/tv_12" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_02" android:layout_width="170.0dip" android:layout_height="170.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff11ee99" android:id="@id/tv_03" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff665511" android:id="@id/tv_11" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_03" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffeecc11" android:gravity="left" android:id="@id/tv_04" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="19.0dip" android:textColor="#ffa5a61e" android:gravity="right" android:id="@id/tv_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_04" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <TextView android:textSize="17.0dip" android:textColor="#ffaa11ee" android:gravity="right" android:id="@id/tv_05" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="19.0dip" android:textColor="#ffccaa11" android:gravity="left" android:id="@id/tv_09" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_05" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:id="@id/tv_01" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0dip" android:id="@id/tv_13" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relative_layout_06" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:id="@id/tv_08" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:id="@id/tv_06" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/text_help" android:gravity="center" android:id="@id/no_opus_tips" android:background="@color/transparent" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_no_result_all_guess" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/guess_your_like_tips" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/no_opus_tips">
+        <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imgGuessYourLikeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/guess_your_like_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/text_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/search_no_result_guess_your_like" android:layout_toRightOf="@id/imgGuessYourLikeIcon" android:layout_centerVertical="true" />
+        <View android:background="@color/category_list_item" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.cmdm.app.view.CustomScollLoadListView android:scrollbarStyle="outsideOverlay" android:id="@id/search_listview" android:visibility="gone" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:divider="@null" android:layout_above="@id/mm_banner" android:layout_below="@id/guess_your_like_tips" android:layout_alignWithParentIfMissing="true" />
+    <com.cmdm.app.view.MMBannerView android:id="@id/mm_banner" android:layout_width="fill_parent" android:layout_height="@dimen/mm_banner_height" android:layout_alignParentBottom="true" app:type="mm_search" />
+</RelativeLayout>

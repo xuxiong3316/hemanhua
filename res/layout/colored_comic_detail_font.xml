@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bar_text" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:gravity="center" android:id="@id/opusFontFamily" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="字体:" />
+        <HorizontalScrollView android:layout_gravity="center" android:id="@id/opusFontFamilyContent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RadioButton android:gravity="center" android:id="@id/opusFontFamilyContentSongTi" android:background="@drawable/font_family_songti_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:checked="true" android:button="@null" />
+                <RadioButton android:gravity="center" android:id="@id/opusFontFamilyContentJianti" android:background="@drawable/font_family_huangcao_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:checked="false" android:button="@null" />
+                <RadioButton android:gravity="center" android:id="@id/opusFontFamilyContentHeiTi" android:background="@drawable/font_family_heiti_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:checked="false" android:button="@null" />
+                <RadioButton android:gravity="center" android:id="@id/opusFontFamilyContentMiaoWuTi" android:background="@drawable/font_family_miaowu_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:checked="false" android:button="@null" />
+                <RadioButton android:gravity="center" android:id="@id/opusFontFamilyContentKaiTi" android:background="@drawable/font_family_kaiti_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:checked="false" android:button="@null" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:gravity="center" android:id="@id/opusFontSize" android:layout_width="60.0dip" android:layout_height="36.0dip" android:text="字号:" />
+        <Button android:gravity="center" android:id="@id/opusFontBigSize" android:background="@drawable/basic_btn_selector" android:layout_width="64.0dip" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:text="Aa+" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:gravity="center" android:id="@id/opusFontNormalSize" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="14" android:layout_weight="1.0" />
+        <Button android:gravity="center" android:id="@id/opusFontSmallSize" android:background="@drawable/basic_btn_selector" android:layout_width="64.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="Aa-" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/qihoo360_bg_settings_black_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:security="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/qihoo360_bg_settings_list_page" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.qihoo360.mobilesafe.ui.support.CheckBoxPreference android:id="@id/security_auto_update" android:background="@drawable/qihoo360_selector_list_settings_item" android:layout_width="fill_parent" android:layout_height="wrap_content" security:title="@string/qihoo360_security_auto_update" security:show_summary="false" security:button="@drawable/qihoo360_selector_switch" security:button_background="@drawable/qihoo360_switch_bg" />
+            </RelativeLayout>
+            <include layout="@layout/qihoo360_divider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.qihoo360.mobilesafe.ui.support.CheckBoxPreference android:id="@id/auto_cloud_scan" android:background="@drawable/qihoo360_selector_list_settings_item" android:layout_width="fill_parent" android:layout_height="wrap_content" security:title="@string/qihoo360_security_auto_cloud_scan" security:show_summary="false" security:button="@drawable/qihoo360_selector_switch" security:button_background="@drawable/qihoo360_switch_bg" />
+            </RelativeLayout>
+            <include layout="@layout/qihoo360_divider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.qihoo360.mobilesafe.ui.support.CheckBoxPreference android:id="@id/security_realtime_protect" android:background="@drawable/qihoo360_selector_list_settings_item" android:layout_width="fill_parent" android:layout_height="wrap_content" security:title="@string/qihoo360_security_realtime_protect" security:show_summary="false" security:button="@drawable/qihoo360_selector_switch" security:button_background="@drawable/qihoo360_switch_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

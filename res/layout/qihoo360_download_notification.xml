@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/qihoo360_net_notify_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_download1" android:paddingTop="8.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_download_appIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/stat_sys_download" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/tv_download_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/ll_download2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_download_notification" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_download_title" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@id/tv_download_description" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/pb_download_progress_bar" android:paddingRight="25.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

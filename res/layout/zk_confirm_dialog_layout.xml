@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_title" android:background="@drawable/zk_confirm_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_content" android:background="@drawable/zk_login_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/zk_dialog_delete_text" style="@style/zk_dialog_text_style" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:id="@id/btn_sure" android:background="@drawable/zk_btn_selector" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/zk_txt_btn_confirm" android:layout_weight="1.0" style="@style/zk_MyText3" />
+            <Button android:id="@id/btn_cancel" android:background="@drawable/zk_btn_selector" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/zk_txt_btn_cancel" android:layout_weight="1.0" style="@style/zk_MyText3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

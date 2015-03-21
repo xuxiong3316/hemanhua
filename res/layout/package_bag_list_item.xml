@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rlConsume" android:background="@drawable/listview_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:text="满上包" android:layout_alignParentLeft="true" style="@style/color_primary_sp18" />
+            <Button android:gravity="center" android:id="@id/order" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="18.0dip" android:minWidth="68.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Btn.Line.Orange" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="88.0dip" android:layout_below="@id/package_name" android:layout_alignLeft="@id/order" android:layout_alignParentLeft="true">
+                <TextView android:id="@id/package_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="剩余多少话数剩余多少话数" style="@style/color_help_sp14" />
+                <ImageView android:id="@id/imgArrow" android:background="@drawable/arrow_consumption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+            <TextView android:textColor="#ff888888" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/llArrow" android:layout_alignTop="@id/llArrow" style="@style/color_help_sp14" />
+        </RelativeLayout>
+        <View android:id="@id/viewBg" android:background="#b2eeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rlProductDesc" android:background="@drawable/unfold_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/frameLayout">
+        <TextView android:id="@id/tvProductDesc" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/color_sub_sp16" />
+        <ImageButton android:id="@id/ibProductDesc" android:background="@drawable/btm_share_seletor" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_below="@id/tvProductDesc" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rlProductDesc" />
+</RelativeLayout>

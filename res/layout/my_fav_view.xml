@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/btm_bar" android:background="@drawable/bar_btm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/all" android:background="@drawable/btn_line_blue_selector" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:text="@string/txt_select_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/btn_line_blue_text_style" />
+        <Button android:id="@id/confirm" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginRight="12.0dip" android:text="@string/txt_select_del" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Btn.Line.Orange" />
+        <TextView android:gravity="center" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="已选择（0）" android:layout_toLeftOf="@id/confirm" android:layout_toRightOf="@id/all" android:layout_centerVertical="true" style="@style/color_primary_sp18" />
+    </RelativeLayout>
+    <ListView android:id="@id/my_fav_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_selector" android:cacheColorHint="@color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0dip" android:layout_above="@id/btm_bar" />
+    <TextView android:id="@id/no_favs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_favorites" android:layout_centerInParent="true" style="@style/color_help_sp14" />
+</RelativeLayout>

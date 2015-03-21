@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference" />
+    <attr name="title" format="string" />
+    <attr name="titleSize" format="dimension" />
+    <attr name="paddingTop" format="dimension" />
+    <attr name="summary" format="string" />
+    <attr name="show_summary" format="boolean" />
+    <attr name="enable_checkbox" format="boolean" />
+    <attr name="button" format="reference" />
+    <attr name="button_background" format="reference" />
+    <attr name="img_right" format="reference" />
+    <attr name="show_new" format="boolean" />
+    <attr name="btn_icon" format="reference" />
+    <attr name="btn_text" format="string" />
+    <attr name="btn_text_color" format="color" />
+    <attr name="animationDuration" format="integer" />
+    <attr name="position">
+        <enum name="top" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+    </attr>
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="linearFlying" format="boolean" />
+    <attr name="weight" format="fraction" />
+    <attr name="openedHandle" format="reference|color" />
+    <attr name="closedHandle" format="reference|color" />
+    <attr name="transitionDrawable" format="reference" />
+    <attr name="transitionDrawableLength" format="integer" />
+    <attr name="transitionTextColorUp" format="color" />
+    <attr name="transitionTextColorDown" format="color" />
+    <attr name="idleTimeout" format="integer" />
+    <attr name="decreaseButton" format="reference" />
+    <attr name="increaseButton" format="reference" />
+    <attr name="src" format="integer" />
+    <attr name="mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="viewAbove" format="reference" />
+    <attr name="viewBehind" format="reference" />
+    <attr name="behindOffset" format="dimension" />
+    <attr name="behindWidth" format="dimension" />
+    <attr name="behindScrollScale" format="float" />
+    <attr name="touchModeAbove">
+        <enum name="margin" value="0" />
+        <enum name="fullscreen" value="1" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="margin" value="0" />
+        <enum name="fullscreen" value="1" />
+    </attr>
+    <attr name="shadowDrawable" format="reference" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="fadeEnabled" format="boolean" />
+    <attr name="fadeDegree" format="float" />
+    <attr name="selectorEnabled" format="boolean" />
+    <attr name="selectorDrawable" format="reference" />
+    <attr name="favTitle" format="string" localization="suggested" />
+    <attr name="numColumns" format="integer" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="gravity">
+        <flag name="top" value="0x00000000" />
+        <flag name="bottom" value="0x00000002" />
+        <flag name="center" value="0x00000001" />
+    </attr>
+    <attr name="index" format="integer" />
+    <attr name="title_name" format="string" />
+    <attr name="channelId" format="string" />
+    <attr name="tagId" format="string" />
+    <attr name="coverImage" format="string" />
+    <attr name="layoutStyle">
+        <enum name="special" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="rank" value="2" />
+    </attr>
+    <attr name="fixed" format="boolean" />
+    <attr name="baselineAligned" format="boolean" />
+    <attr name="baselineAlignedChildIndex" format="integer" min="0" />
+    <attr name="weightSum" format="float" />
+    <attr name="measureWithLargestChild" format="boolean" />
+    <attr name="showDividers">
+        <flag name="none" value="0x00000000" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="end" value="0x00000004" />
+    </attr>
+    <attr name="divider" format="reference|color" />
+    <attr name="dividerPadding" format="dimension" />
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x00000000" />
+        <flag name="flip" value="0x00000001" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="type">
+        <enum name="mm_home" value="0" />
+        <enum name="heyule" value="1" />
+        <enum name="mm_search" value="2" />
+    </attr>
+    <attr name="collapsed_height" format="dimension" />
+    <attr name="drag_scroll_start" format="float" />
+    <attr name="max_drag_scroll_speed" format="float" />
+    <attr name="float_background_color" format="color" />
+    <attr name="remove_mode">
+        <enum name="clickRemove" value="0" />
+        <enum name="flingRemove" value="1" />
+    </attr>
+    <attr name="track_drag_sort" format="boolean" />
+    <attr name="float_alpha" format="float" />
+    <attr name="slide_shuffle_speed" format="float" />
+    <attr name="remove_animation_duration" format="integer" />
+    <attr name="drop_animation_duration" format="integer" />
+    <attr name="drag_enabled" format="boolean" />
+    <attr name="sort_enabled" format="boolean" />
+    <attr name="remove_enabled" format="boolean" />
+    <attr name="drag_start_mode">
+        <enum name="onDown" value="0" />
+        <enum name="onMove" value="1" />
+        <enum name="onLongPress" value="2" />
+    </attr>
+    <attr name="drag_handle_id" format="integer" />
+    <attr name="fling_handle_id" format="integer" />
+    <attr name="click_remove_id" format="integer" />
+    <attr name="use_default_controller" format="boolean" />
+    <attr name="sephiroth_listViewStyle" format="reference" />
+    <attr name="sephiroth_absHListViewStyle" format="reference" />
+    <attr name="sephiroth_listPreferredItemWidth" format="dimension" />
+    <attr name="entries" format="reference" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="headerDividersEnabled" format="boolean" />
+    <attr name="footerDividersEnabled" format="boolean" />
+    <attr name="overScrollHeader" format="reference|color" />
+    <attr name="overScrollFooter" format="reference|color" />
+    <attr name="measureWithChild" format="integer" />
+    <attr name="stackFromRight" format="boolean" />
+    <attr name="transcriptMode">
+        <enum name="normal" value="1" />
+        <enum name="disabled" value="0" />
+        <enum name="alwaysScroll" value="2" />
+    </attr>
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiLinePageIndicatorStyle" format="reference" />
+    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="lineWidth" format="dimension" />
+    <attr name="gapWidth" format="dimension" />
+    <attr name="clipPadding" format="dimension" />
+    <attr name="footerColor" format="color" />
+    <attr name="footerLineHeight" format="dimension" />
+    <attr name="footerIndicatorStyle">
+        <enum name="none" value="0" />
+        <enum name="triangle" value="1" />
+        <enum name="underline" value="2" />
+    </attr>
+    <attr name="footerIndicatorHeight" format="dimension" />
+    <attr name="footerIndicatorUnderlinePadding" format="dimension" />
+    <attr name="footerPadding" format="dimension" />
+    <attr name="linePosition">
+        <enum name="top" value="1" />
+        <enum name="bottom" value="0" />
+    </attr>
+    <attr name="selectedBold" format="boolean" />
+    <attr name="titlePadding" format="dimension" />
+    <attr name="topPadding" format="dimension" />
+    <attr name="fades" format="boolean" />
+    <attr name="fadeDelay" format="integer" />
+    <attr name="fadeLength" format="integer" />
+</resources>

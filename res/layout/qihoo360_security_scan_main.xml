@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/qihoo360_bg_mainscreen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:security="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/created" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/security_bgview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/qihoo360_margin_bg_title_malware">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/qihoo360_security_main_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/qihoo360_scan_view_height">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_top_bg_padding">
+                <com.qihoo360.mobilesafe.ui.malware.ScanAniImageView android:layout_gravity="center" android:id="@id/security_mainscanview" android:layout_width="67.0dip" android:layout_height="67.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/security_scanning_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_scanning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/qihoo360_textAppearanceMedium" />
+                    <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_scanning_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/security_description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_result_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/qihoo360_textAppearanceMedium" />
+                    <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_result_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <Button android:id="@id/security_button_quickscan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qihoo360_security_quickscan" style="@style/qihoo360_btn_green_malware" />
+                <Button android:id="@id/security_button_finish" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qihoo360_finish" style="@style/qihoo360_btn_green_malware" />
+                <Button android:id="@id/security_button_uninstall" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qihoo360_security_uninstall" style="@style/qihoo360_btn_green_malware" />
+            </LinearLayout>
+            <com.qihoo360.mobilesafe.ui.support.ScanProgressBar android:gravity="center" android:id="@id/security_main_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_scan_bar_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/security_main" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.qihoo360.mobilesafe.ui.support.CheckBoxPreference android:id="@id/security_full_scan" android:background="@drawable/qihoo360_security_scan_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" security:icon="@drawable/qihoo360_security_full_scan" security:title="@string/qihoo360_security_fullscan" security:summary="@string/qihoo360_security_fullscan_tips" security:img_right="@drawable/qihoo360_arrow_right" />
+                    <include layout="@layout/qihoo360_divider" />
+                    <com.qihoo360.mobilesafe.ui.support.CheckBoxPreference android:id="@id/security_scan_log" android:background="@drawable/qihoo360_security_scan_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" security:icon="@drawable/qihoo360_security_log" security:title="@string/qihoo360_security_log" security:summary="@string/qihoo360_security_log_tips" security:img_right="@drawable/qihoo360_arrow_right" />
+                    <include layout="@layout/qihoo360_divider" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/security_main_detail" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/qihoo360_security_main_result_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/qihoo360_security_result" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qihoo360_security_scan_result" android:singleLine="true" style="@style/qihoo360_textAppearanceSmall" />
+                <TextView android:textColor="@color/qihoo360_security_result" android:gravity="right" android:id="@id/security_main_result_title" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/qihoo360_textAppearanceSmall" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/security_safe_layout" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_safe_operate" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceMedium" />
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_safe_count" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceMedium" />
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_safe_time" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceMedium" />
+                    <TextView android:textColor="@color/qihoo360_dark" android:id="@id/security_safe_speed" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceMedium" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/security_malware_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.qihoo360.mobilesafe.ui.support.LogListView android:id="@id/security_malware_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:layout_weight="1.0" style="@style/qihoo360_listview" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.qihoo360.mobilesafe.ui.support.LogListView android:scrollbarStyle="outsideOverlay" android:id="@id/apkresultlist" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/qihoo360_log_divider" android:dividerHeight="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,7 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-
+    <dimen name="qihoo360_margin_top_from_title">5.0dip</dimen>
+    <dimen name="qihoo360_toast_padding">10.0dip</dimen>
+    <dimen name="qihoo360_perference_checkbox_icon_margin">10.0dip</dimen>
+    <dimen name="qihoo360_perference_checkbox_text_marginLeft">10.0dip</dimen>
+    <dimen name="qihoo360_scan_view_height">155.0dip</dimen>
+    <dimen name="favtitle_height">45.0dip</dimen>
+    <dimen name="favtitle_item_width">45.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="listview_divider_height">1.0px</dimen>
+    <dimen name="gridview_padding_horizontal">6.0dip</dimen>
+    <dimen name="content_tip_text_size">16.0dip</dimen>
+    <dimen name="channel_list_padding_h">0.0dip</dimen>
+    <dimen name="channel_list_item_padding_h">8.0dip</dimen>
+    <dimen name="title_height">48.0dip</dimen>
+    <dimen name="bottom_panel_height">51.0dip</dimen>
+    <dimen name="detail_title_height">112.0dip</dimen>
+    <dimen name="detail_gridview_padding">2.5dip</dimen>
+    <dimen name="main_tabs_height">51.0dip</dimen>
+    <dimen name="sub_tabs_height">42.0dip</dimen>
+    <dimen name="title_window_loading_margin">18.0dip</dimen>
+    <dimen name="book_mark_with_checkbox">38.0dip</dimen>
+    <dimen name="book_mark_without_checkbox">6.0dip</dimen>
+    <dimen name="dialog_fragment_min_height">300.0dip</dimen>
+    <dimen name="loading_height">60.0dip</dimen>
+    <dimen name="loading_width">72.0dip</dimen>
+    <dimen name="loading_small_height">32.0dip</dimen>
+    <dimen name="loading_small_width">38.0dip</dimen>
+    <dimen name="mm_banner_height">56.0dip</dimen>
+    <dimen name="default_circle_indicator_radius">3.0dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_line_indicator_line_width">12.0dip</dimen>
+    <dimen name="default_line_indicator_gap_width">4.0dip</dimen>
+    <dimen name="default_line_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_title_indicator_clip_padding">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20.0dip</dimen>
+    <dimen name="default_title_indicator_footer_padding">7.0dip</dimen>
+    <dimen name="default_title_indicator_text_size">15.0dip</dimen>
+    <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
+    <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
 </resources>

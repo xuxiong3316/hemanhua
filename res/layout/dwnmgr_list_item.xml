@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/listview_selector" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.CustomerImageView android:id="@id/detailImage" android:layout_width="45.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/favorite_simple" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="作品缩略图" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toLeftOf="@id/cb" android:layout_toRightOf="@id/detailImage" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/ic_color_mh" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/second_titil_color" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="性感女仆" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_help" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已下载18话(77M)," android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/btn_green_text" android:id="@id/txt_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="正在下载50%" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/progress_fg_done_color" android:id="@id/txt_download_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:id="@id/cb" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/cb" android:layout_toRightOf="@id/detailImage" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0dip" android:textColor="@color/second_titil_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/tab_text" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

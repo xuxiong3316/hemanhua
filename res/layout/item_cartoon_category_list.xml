@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="0.0dip" android:paddingRight="12.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cover_wrapper" android:background="@drawable/face_def_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.cmdm.app.view.CustomerImageView android:layout_gravity="center" android:id="@id/cover" android:layout_width="66.0dip" android:layout_height="88.0dip" android:src="@drawable/favorite_simple" android:scaleType="fitXY" />
+        <View android:background="@drawable/face_def_fg" android:layout_width="66.0dip" android:layout_height="88.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/cover_wrapper" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_wrapper" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="0.0dip" android:layout_toRightOf="@id/cover_wrapper" android:layout_alignParentTop="true">
+            <TextView android:textSize="26.0dip" android:textStyle="italic" android:textColor="#ff222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/index" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1." />
+            <TextView android:textSize="16.0dip" android:textColor="#ff222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="海贼王" android:singleLine="true" android:lineSpacingExtra="0.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="top|left|center" android:id="@id/intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="ONE PIECE在故事中为“一个大秘宝”之意，故事描述男主角“草帽”蒙其D路飞..." android:maxLines="2" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="#ff888888" android:layout_gravity="left" android:id="@id/type_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气：5069" android:layout_alignLeft="@id/title_wrapper" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff888888" android:layout_gravity="right" android:id="@id/newestVol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="61话-连载" android:layout_alignBottom="@id/type_data" android:layout_alignParentRight="true" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

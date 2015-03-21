@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/loading" layout="@layout/loading_small" />
+    <include android:id="@id/load_failed" android:visibility="gone" layout="@layout/load_failed_small" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/content" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/ic_mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mm" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0dip" android:id="@id/tips_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="更多精彩，尽在MM客户端" android:singleLine="true" android:layout_toLeftOf="@id/mm_action" android:layout_toRightOf="@id/ic_mm" />
+        <TextView android:id="@id/tips_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费游戏、音乐、视频、小说及软件" android:singleLine="true" android:layout_below="@id/tips_main" android:layout_alignLeft="@id/tips_main" android:layout_alignRight="@id/tips_main" />
+        <Button android:id="@id/mm_action" android:layout_width="64.0dip" android:layout_height="36.0dip" android:text="下载" android:layout_alignParentRight="true" style="@style/Btn.Green.MM" />
+    </RelativeLayout>
+</merge>

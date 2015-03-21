@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.hisunflytone.android">
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mm_banner" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/progressbar_style" android:layout_above="@id/mm_banner" android:layout_alignWithParentIfMissing="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <com.cmdm.app.view.MMBannerView android:id="@id/mm_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mm_banner_height" android:layout_alignParentBottom="true" app:type="heyule" />
+</RelativeLayout>

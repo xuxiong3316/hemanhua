@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llProgressInfo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_gift" />
+            <RelativeLayout android:background="@drawable/box_gift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip">
+                <ImageButton android:id="@id/ibShare" android:background="@drawable/ic_share_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/tvProgressInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:layout_toLeftOf="@id/ibShare" android:layout_alignParentLeft="true" style="@style/colorffffffsp18" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/hotsport_province" android:id="@id/tvRankInfo" android:paddingLeft="5.0dip" android:paddingTop="14.0dip" android:paddingRight="5.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/hotsport_rank_head" />
+        <View android:id="@id/viewLine" android:background="@color/expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.cmdm.app.view.ListViewInScrollView android:id="@id/lvRankInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/null_selector" android:scrollingCache="false" android:divider="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/hotsport_province" android:gravity="center" android:id="@id/tvRankNoData" android:background="@color/white" android:paddingTop="14.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无数据" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/hotsport_province" android:gravity="center_vertical" android:id="@id/tvPrizePublish" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="本月二、三、四重奖最终得奖名单将在次月稽核异常数据后进行公布。\n您上个月的分享次数为XX次。" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llPrizeInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/hotsport_province" android:id="@id/tvPrizeInfo" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingTop="14.0dip" android:paddingRight="5.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="上月中奖名单：" />
+            <include layout="@layout/hotsport_prize_head" />
+            <View android:background="@color/expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.cmdm.app.view.ListViewInScrollView android:id="@id/lvPrizeInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/null_selector" android:scrollingCache="false" android:divider="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/hotsport_province" android:gravity="center" android:id="@id/tvPrizeNoData" android:background="@color/white" android:paddingTop="14.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无数据" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llSharePannel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivImageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/share_icon" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/tvGiftdesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" android:text="与好友分享与好友分享与好友分享" style="@style/color444444dp16" />
+        </LinearLayout>
+        <View android:background="@color/no_expand" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="12.0dip" android:text="分享给好友：" style="@style/color444444dp16" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tvWX" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" android:drawableTop="@drawable/ic_4g_share_pyq" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/color444444dp14" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tvWXFriend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信好友" android:drawableTop="@drawable/ic_share_wechat" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/color444444dp14" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tvSina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新浪微博" android:drawableTop="@drawable/ic_4g_share_sina" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/color444444dp14" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tvOther" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他" android:drawableTop="@drawable/ic_share_other" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/color444444dp14" />
+    </LinearLayout>
+    <View android:background="@color/no_expand" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+    <TextView android:gravity="center" android:id="@id/tvCancle" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="取消" style="@style/color444444dp18" />
+</LinearLayout>

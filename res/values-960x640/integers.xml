@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rc_finish_dialog_width">500</integer>
+</resources>

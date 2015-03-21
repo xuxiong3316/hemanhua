@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/baseLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/rlTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/progress_wait" />
+    <include layout="@layout/reload_layout" />
+    <ViewStub android:layout_gravity="top" android:id="@id/content_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/title_height" android:layout_below="@id/rlTitle" />
+    <include android:layout_gravity="center" android:layout_marginTop="48.0dip" android:layout_below="@id/rlTitle" layout="@layout/no_data" />
+</merge>

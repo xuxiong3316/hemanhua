@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/qihoo360_bg_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/security_detail_button_uninstall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/qihoo360_btns_black" />
+    <LinearLayout android:orientation="vertical" android:id="@id/security_detail_relative_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/created" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/security_detail_relative_app_img" android:layout_width="90.0dip" android:layout_height="80.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/security_detail_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/qihoo360_menu_help" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/security_detail_relative_top_right" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/security_detail_relative_app_img" android:layout_alignParentRight="true">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/qihoo360_black" android:id="@id/security_detail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_detail_app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:maxWidth="120.0dip" android:singleLine="true" />
+                    <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_detail_app_mem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:id="@id/security_detail_app_corporation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/security_detail_app_level" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:id="@id/security_detail_app_running" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_above="@id/security_detail_button_uninstall" android:layout_below="@id/security_detail_relative_top">
+        <LinearLayout android:orientation="vertical" android:id="@id/security_detail_relative_mid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/qihoo360_black" android:id="@id/security_detail_app_summary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/qihoo360_security_detail_summary_title" />
+            <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_detail_app_summary_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/qihoo360_black" android:id="@id/security_detail_app_action_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/qihoo360_security_detail_action_title" />
+            <TextView android:textColor="@color/qihoo360_grey" android:id="@id/security_detail_app_action_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/qihoo360_black" android:id="@id/security_detail_app_permission_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/qihoo360_security_detail_permission_title" />
+            <LinearLayout android:orientation="vertical" android:id="@id/security_permission_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

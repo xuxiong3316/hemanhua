@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:text="@string/dialog_other_channel" style="@style/ExitDialogTitleTextStyle" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@id/img_left" android:background="@drawable/exitdialog_previous_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@id/img_left" />
+        <ImageView android:id="@id/img_right" android:background="@drawable/exitdialog_next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@id/img_right" />
+        <com.cmdm.app.view.FillGallery android:id="@id/recommend_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:spacing="0.0dip" android:layout_toLeftOf="@id/img_right" android:layout_toRightOf="@id/img_left" />
+    </RelativeLayout>
+    <View android:background="@color/comment_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <FrameLayout android:id="@id/btn" android:layout_width="56.0dip" android:layout_height="48.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/send" android:background="@drawable/exit_dialog_send_selector" android:visibility="visible" android:layout_width="56.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_btm_send" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateDrawable="@drawable/fb_loading" />
+        </FrameLayout>
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+        <EditText android:id="@id/text" android:background="@drawable/main_menu_search_selector" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="9.0dip" android:hint="@string/txt_setting_feed_back" android:maxLength="500" android:layout_toLeftOf="@id/btn" android:layout_alignParentLeft="true" style="@style/comment_edit" />
+    </RelativeLayout>
+</LinearLayout>

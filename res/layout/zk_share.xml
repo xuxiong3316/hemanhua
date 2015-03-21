@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zk_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/zk_title_back" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/sinabtn" android:background="@drawable/zk_bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/zk_sina_selector" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/tencentbtn" android:background="@drawable/zk_bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/zk_tencent_selector" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/renrenbtn" android:background="@drawable/zk_bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/zk_renren_selector" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/msgbtn" android:background="@drawable/zk_bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/zk_msg_selector" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/mmsbtn" android:background="@drawable/zk_bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/zk_mms_selector" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

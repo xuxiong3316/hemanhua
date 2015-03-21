@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/gifLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/imageView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@id/imageView" />
+    <ProgressBar android:id="@id/load_pb" android:layout_width="@dimen/loading_width" android:layout_height="@dimen/loading_height" android:indeterminate="false" android:indeterminateDrawable="@drawable/wait_progress_animation" android:layout_centerInParent="true" />
+</RelativeLayout>

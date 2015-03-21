@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cmdm.app.view.viewpagerindicator.TabPageIndicator android:id="@id/indicator" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hisunflytone.framwork.BaseViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

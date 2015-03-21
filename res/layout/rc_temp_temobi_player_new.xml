@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/temp_temobi_player" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/temobi_player_logo_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/rc_bright_control" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/temobi_player_logo" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/rc_voice_control" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/rc_imageView3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:src="@drawable/rc_progress_control" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <SurfaceView android:id="@id/temobi_player_surfaceview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <master.flame.danmaku.ui.widget.DanmakuSurfaceView android:id="@id/sv_danmaku" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/rc_player_gesture" />
+    <RelativeLayout android:id="@id/temobi_player_volume_layout" android:background="@drawable/rc_brightness_bkg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_above="@id/rc_voice_time" android:layout_below="@id/temobi_palyer_navigation_bar" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/temobi_player_volume_reduce" android:background="@drawable/rc_btn_volume_mute_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.temobi.android.tplayer.dmcj.widget.VerticalSeekBar android:id="@id/temobi_player_sb_volume" android:layout_width="25.0dip" android:layout_height="wrap_content" android:maxHeight="0.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="0.0dip" android:thumb="@drawable/rc_thumb" android:thumbOffset="0.0dip" android:layout_above="@id/temobi_player_volume_reduce" android:layout_below="@id/temobi_player_volume_value" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/temobi_player_volume_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_zero_percent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/temobi_palyer_navigation_bar" android:background="@drawable/rc_navigation_background_black" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rc_more_close_click" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_margin="5.0px">
+            <ImageView android:id="@id/rc_temobi_player_pl_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/rc_back_nor" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/rc_white" android:id="@id/rc_temobi_player_pl_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/rc_tp_btn_tanmu" android:background="@drawable/rc_btn_tanmu_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/tp_btn_sessions" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/tp_btn_sessions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/rc_sessions_button" android:scaleType="fitCenter" android:layout_toLeftOf="@id/more" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/rc_btn_more_selector" android:scaleType="fitCenter" android:layout_toLeftOf="@id/tp_dc_clock" android:layout_centerVertical="true" />
+        <com.temobi.android.tplayer.dmcj.widget.DigitalClock android:textColor="@color/rc_white" android:id="@id/tp_dc_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/text_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tp_dc_clock" android:layout_alignParentRight="true">
+            <TextView android:textSize="10.0dip" android:textColor="@color/rc_white" android:id="@id/text_wlan" android:paddingTop="-1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+            <ImageView android:id="@id/tp_iv_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_battery_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_voice_time" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="10.0sp" android:id="@id/rc_temobi_player_pl_pastime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="00:00:00" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <SeekBar android:id="@id/rc_temobi_player_pl_seekbar" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="2.0dip" android:thumb="@drawable/rc_thumb1" android:thumbOffset="7.5dip" android:layout_toLeftOf="@id/rc_temobi_player_pl_totaltime" android:layout_toRightOf="@id/rc_temobi_player_pl_pastime" android:layout_alignParentTop="true" />
+            <TextView android:textSize="10.0sp" android:id="@id/rc_temobi_player_pl_totaltime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="00:00:00" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rc_temobi_player_control_panel" android:background="@drawable/rc_temobi_player_control_background" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/rc_temobi_player_action_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <CheckBox android:id="@id/rc_tp_cb_lock" android:background="@drawable/rc_cb_lock_no" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:button="@color/rc_transparent" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <Button android:id="@id/rc_temobi_player_action_playpause" android:background="@drawable/rc_temobi_player_pause_dim" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true" />
+            <Button android:id="@id/rc_temobi_player_action_brightness" android:background="@drawable/rc_temobi_player_bright_bright" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="75.0dip" android:layout_toLeftOf="@id/rc_temobi_player_action_playpause" android:layout_centerInParent="true" />
+            <Button android:id="@id/rc_tp_btn_quality" android:background="@drawable/rc_btn_sd_quality_selector" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="75.0dip" android:layout_toLeftOf="@id/rc_temobi_player_action_brightness" android:layout_centerInParent="true" />
+            <Button android:id="@id/rc_temobi_player_action_volume" android:background="@drawable/rc_volume_button" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="75.0dip" android:layout_toRightOf="@id/rc_temobi_player_action_playpause" android:layout_centerInParent="true" />
+            <Button android:id="@id/rc_temobi_player_action_full" android:background="@drawable/rc_temobi_player_size_full_dim" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="75.0dip" android:layout_toRightOf="@id/rc_temobi_player_action_volume" android:layout_alignParentLeft="false" android:layout_centerInParent="true" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rc_temobi_player_seekbar_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rc_tp_rl_sessions" android:background="@color/rc_white" android:visibility="invisible" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_below="@id/temobi_palyer_navigation_bar" android:layout_alignParentRight="true">
+        <LinearLayout android:id="@id/rc_page_title_page" android:background="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/rc_page_fan" android:background="@drawable/rc_list_number" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/rc_list_down" android:scaleType="fitCenter" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/rc_list_page" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:id="@id/rc_page_image" android:background="@drawable/rc_list_nor" android:layout_width="70.0dip" android:layout_height="10.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/rc_listpage_color" android:gravity="center_horizontal" android:id="@id/rc_page_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginBottom="-6.0dip" android:text="第1页" android:layout_above="@id/rc_page_image" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rc_tp_rl_sessions_layout" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rc_page_title_page">
+            <GridView android:id="@id/rc_tp_lv_sessionlist" android:background="#fff5f5f5" android:padding="4.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#fff5f5f5" android:cacheColorHint="#fff5f5f5" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:choiceMode="singleChoice" />
+        </RelativeLayout>
+        <ListView android:id="@id/rc_tp_lv_pagelist" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:layout_alignParentRight="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/rc_tp_rl_sessions_layout" android:layout_centerInParent="true">
+            <ImageButton android:textColor="@color/rc_white" android:id="@id/rc_tp_btn_prePage" android:background="@color/rc_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_chapter_pre_selector" android:text="上一页" />
+            <TextView android:textColor="@color/rc_white" android:id="@id/rc_tp_tv_number" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="0/0页" />
+            <ImageButton android:textColor="@color/rc_white" android:id="@id/rc_tp_btn_nextPage" android:background="@color/rc_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_chapter_next_selector" android:text="下一页" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/rc_tp_ll_more" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/rc_voice_time" android:layout_below="@id/temobi_palyer_navigation_bar" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/rc_more_more" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_more_collect_click" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0px">
+                    <ImageView android:id="@id/rc_tp_btn_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_fav_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_more_label_click" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0px">
+                    <ImageView android:id="@id/rc_tp_btn_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_mark_selector" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0px">
+                    <ImageView android:id="@id/rc_tp_btn_flower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_flower_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0px">
+                    <ImageView android:id="@id/rc_tp_btn_egg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_egg_selector" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0px">
+                    <ImageView android:id="@id/rc_tp_btn_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_share_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_tp_ll_tanmu" android:background="@color/rc_more_more" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_below="@id/temobi_palyer_navigation_bar" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_tanmu_switch_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/rc_tanmu_switch_img" android:layout_width="60.0dip" android:layout_height="30.0dip" android:src="@drawable/rc_tanmu_switch_off_normal" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_tanmu_switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_tanmu_put_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/rc_tanmu_put_btn_img" android:layout_width="60.0dip" android:layout_height="30.0dip" android:src="@drawable/rc_tanmu_put_norh" android:scaleType="fitCenter" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_put_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_tanmu_put" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rc_tanmu_shield" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rc_tanmu_guest_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/rc_tanmu_guest_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/rc_guest_nor" android:scaleType="fitCenter" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_guest_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_tanmu_guest" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rc_tanmu_color_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/rc_tanmu_color_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/rc_paint_plate_nor" android:scaleType="fitCenter" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_color_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_tanmu_color" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/rc_tanmu_play_setting" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rc_tanmu_textScale" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@id/rc_tanmu_text_size_sb" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="2.0dip" android:thumb="@drawable/rc_thumb1" android:thumbOffset="7.5dip" android:layout_toLeftOf="@id/rc_tanmu_text_size_tv" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_text_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rc_tanmu_density" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@id/rc_tanmu_density_sb" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="2.0dip" android:thumb="@drawable/rc_thumb1" android:thumbOffset="7.5dip" android:layout_toLeftOf="@id/rc_tanmu_density_tv" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_density_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/rc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rc_tanmu_speed" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@id/rc_tanmu_speed_sb" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="2.0dip" android:thumb="@drawable/rc_thumb1" android:thumbOffset="7.5dip" android:layout_toLeftOf="@id/rc_tanmu_speed_tv" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tanmu_speed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/rc_tp_gesture_layout" android:background="@drawable/rc_process_time_bg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="25.0sp" android:textColor="@color/rc_green" android:id="@id/rc_tp_gesture_play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/rc_white" android:id="@id/rc_tp_gesture_play_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / 00:00:00" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/tp_ll_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="vertical" android:id="@id/operation_volume_brightness" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/operation_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_video_volumn_bg" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/operation_bg" android:layout_centerInParent="true">
+                <FrameLayout android:layout_gravity="center_vertical" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/operation_full" android:layout_width="94.0dip" android:layout_height="wrap_content" android:src="@drawable/rc_video_num_bg" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/operation_percent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/rc_video_num_front" android:scaleType="matrix" />
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/love" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/tp_pb_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/rc_my_progress_indeterminate" android:minWidth="70.0dip" android:minHeight="70.0dip" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleLarge" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_new_hint2" android:layout_below="@id/tp_pb_loading" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/nextsession_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/love" android:layout_centerHorizontal="true">
+            <TextView android:textSize="20.0dip" android:textColor="@color/rc_gray" android:id="@id/play_next_session" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_play_nextsession_loading" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/love4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/loading_failure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_loading_fail" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/loading_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/love4" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:id="@id/loading_failurea" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_play_loading_fail" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:ellipsize="middle" android:gravity="center" android:id="@id/temobi_player_network_textview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/temobi_player_brightness_layout" android:background="@drawable/rc_brightness_bkg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_above="@id/rc_voice_time" android:layout_below="@id/temobi_palyer_navigation_bar" android:layout_alignParentLeft="true">
+        <ImageButton android:id="@id/img_brightness_gray" android:background="@drawable/rc_temobi_player_bright_bright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.temobi.android.tplayer.dmcj.widget.VerticalSeekBar android:id="@id/seek_bar_brightness" android:layout_width="25.0dip" android:layout_height="wrap_content" android:maxHeight="0.0dip" android:progressDrawable="@drawable/rc_seekbar_img2" android:minHeight="0.0dip" android:thumb="@drawable/rc_thumb" android:thumbOffset="0.0dip" android:layout_above="@id/img_brightness_gray" android:layout_below="@id/temobi_player_brightness_value" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/temobi_player_brightness_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_zero_percent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_unlock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/rc_cb_lock_yes" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="?android:attr/buttonStyleSmall" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_tanmu_sent_ll" android:background="@color/rc_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/rc_tanmu_close_btn" android:background="@drawable/rc_btn_tanmu_close_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/rc_tanmu_sent_btn" android:background="@drawable/rc_btn_tanmu_sent_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:layout_alignParentRight="true" />
+            <EditText android:textColor="@color/rc_white" android:textColorHint="#ff767676" android:id="@id/rc_tanmu_sent_edit" android:background="@drawable/rc_input_box" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" android:hint="@string/rc_tanmu_sent_hint" android:maxLength="30" android:layout_toLeftOf="@id/rc_tanmu_sent_btn" android:layout_toRightOf="@id/rc_tanmu_close_btn" android:imeOptions="flagNoExtractUi" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/rc_btn_tanmu_small" android:background="@drawable/rc_tanmu_small_press" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <ImageButton android:id="@id/rc_btn_tanmu_big" android:background="@drawable/rc_tanmu_big_nor" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/rc_btn_tanmu_small" />
+            <ImageView android:id="@id/rc_tanmu_color_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_left_scroll" android:layout_toRightOf="@id/rc_btn_tanmu_big" />
+            <Gallery android:id="@id/rc_tanmu_color_horizontalListView" android:layout_width="220.0dip" android:layout_height="40.0dip" android:spacing="10.0dip" android:layout_toRightOf="@id/rc_tanmu_color_left" />
+            <ImageView android:id="@id/rc_tanmu_color_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_right_scroll" android:layout_toRightOf="@id/rc_tanmu_color_horizontalListView" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

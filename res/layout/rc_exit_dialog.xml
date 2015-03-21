@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rc_exitdialog" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0dip" android:textColor="@color/rc_black" android:id="@id/rc_textone" android:paddingLeft="8.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_people_look" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rc_gerrly" android:layout_width="300.0dip" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/rc_image_left" android:background="@drawable/rc_left_scroll" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.025" />
+            <Gallery android:id="@id/rc_gallery_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="0.85" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/rc_image_right" android:background="@drawable/rc_right_scroll" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.025" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/rc_exit_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_exitFavoriteLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/rc_collent_exit" android:background="#0000003d" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/rc_btn_exit_fav_selector" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_more_collect" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_exitShareLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/rc_share_exit" android:background="#0000003d" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/rc_btn_exit_share_selector" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_more_share" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_exitCommentLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/rc_comment_exit" android:background="#0000003d" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/rc_btn_exit_comment_selector" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_more_comment" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_exitNextLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/rc_next_exit" android:background="#0000003d" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/rc_btn_exit_next_selector" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_more_next" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_exitReplayLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/rc_replay_exit" android:background="#0000003d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_btn_exit_replay_selector" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_more_replay" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/rc_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/rc_exit_checkbox" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="18.0dip" android:button="@drawable/rc_checkbox_selector" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="@color/rc_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_next_exit_hint" android:layout_toRightOf="@id/rc_exit_checkbox" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/rc_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:textColor="#ff999999" android:orientation="horizontal" android:id="@id/rc_orderbutton_RelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0dip" android:textColor="@color/rc_black" android:gravity="center" android:id="@id/rc_cancelbt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rc_cancel" android:layout_weight="1.0" />
+            <View android:background="@color/rc_line" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rc_exitkbt" android:background="#ffff890e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/rc_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

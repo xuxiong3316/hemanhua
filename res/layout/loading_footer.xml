@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/loading" layout="@layout/loading_small" />
+    <include android:id="@id/load_failed" android:visibility="gone" layout="@layout/load_failed_small" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/tab_text_default" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/load_end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/txt_loading_end" />
+</FrameLayout>

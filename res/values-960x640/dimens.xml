@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_mmvolume_hight">120.0dip</dimen>
+    <dimen name="rc_mmvolume_margintop">33.0dip</dimen>
+    <dimen name="rc_mmpanel_marginleft">60.0dip</dimen>
+    <dimen name="rc_mmpanel_marginright">60.0dip</dimen>
+    <dimen name="rc_mmlive_fav_marginright">15.0dip</dimen>
+</resources>

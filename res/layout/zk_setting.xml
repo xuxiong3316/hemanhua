@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/linearTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_back" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <Button android:id="@id/setting_back_btn" android:background="@drawable/zk_btn_selector_back" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@drawable/zk_textcolor_selector" android:layout_gravity="center" android:id="@id/textview_titile_textinfo" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffff890e" android:layout_width="fill_parent" android:layout_height="1.1999817px" android:layout_below="@id/linearTop" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearTop" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/fanyelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/fanyetextview1" android:layout_marginTop="10.0dip" android:text="@string/zk_fanye" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_fanyerecommend" android:layout_toLeftOf="@id/fanye_checkbox" android:layout_below="@id/fanyetextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/fanye_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/radiolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/radiotextview1" android:text="@string/zk_radio" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_radiorecommend" android:layout_toLeftOf="@id/radio_checkbox" android:layout_below="@id/radiotextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/radio_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/leftlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/lefttextview1" android:text="@string/zk_lefthand" style="@style/zk_setting_text1" />
+                <TextView android:id="@id/lefttextview2" android:layout_marginTop="5.0dip" android:text="@string/zk_lefthandrecommend" android:layout_toLeftOf="@id/left_checkbox" android:layout_below="@id/lefttextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/left_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/ganying_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/ganyingview1" android:layout_marginTop="5.0dip" android:text="@string/zk_ganying" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_ganying_detail" android:layout_toLeftOf="@id/ganying_checkbox" android:layout_below="@id/ganyingview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/ganying_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/setting_exit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/gonepagetextview1" android:layout_marginTop="5.0dip" android:text="@string/zk_exit_sure" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_exit_detail" android:layout_toLeftOf="@id/setting_exit_checkbox" android:layout_below="@id/gonepagetextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/setting_exit_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/gonepagelayout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/gonepagetextview1" android:layout_marginTop="5.0dip" android:text="@string/zk_gonepage" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_gonepagerecommend" android:layout_toLeftOf="@id/gonepage_checkbox" android:layout_below="@id/gonepagetextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/gonepage_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/gonetucaolayout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/gonetucaotextview1" android:layout_marginTop="5.0dip" android:text="@string/zk_gonetucao" style="@style/zk_setting_text1" />
+                <TextView android:layout_marginTop="5.0dip" android:text="@string/zk_tucaorecommend" android:layout_toLeftOf="@id/gonetucao_checkbox" android:layout_below="@id/gonetucaotextview1" android:layout_alignParentLeft="true" style="@style/zk_setting_text2" />
+                <ImageView android:id="@id/gonetucao_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include layout="@layout/zk_view_layout" />
+            <RelativeLayout android:id="@id/lightlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:id="@id/lighttextview1" android:text="@string/zk_light" style="@style/zk_setting_text1" />
+                <SeekBar android:id="@id/seekBar_setBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:maxHeight="6.0dip" android:max="255" android:progressDrawable="@drawable/zk_seekbar_img" android:thumb="@drawable/zk_bright_thumb" android:thumbOffset="2.0dip" android:layout_toLeftOf="@id/SeekBar_checkbox" android:layout_below="@id/lighttextview1" />
+                <ImageView android:id="@id/SeekBar_checkbox" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/zk_checkbox_off_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <include android:visibility="gone" layout="@layout/zk_view_layout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

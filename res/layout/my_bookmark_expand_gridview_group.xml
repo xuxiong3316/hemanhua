@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/tvGroupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color_primary_sp18" />
+    <ImageView android:id="@id/ivGroupView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_delisting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:src="@drawable/delisting" android:layout_toRightOf="@id/tvGroupName" android:layout_centerVertical="true" android:contentDescription="@string/txt_delisting" />
+    <View android:id="@id/vline" android:background="@color/expand" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

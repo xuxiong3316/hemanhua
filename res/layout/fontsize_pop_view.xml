@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_fontsize" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_name" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qbook_fontsize_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/qbook_theme_title_text" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/txt_name" android:layout_alignParentRight="true">
+        <ImageButton android:gravity="center" android:id="@id/btn_size_add" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/fontsize_increase" android:layout_weight="1.0" style="@style/Btn.Line.Gray" />
+        <ImageButton android:gravity="center" android:id="@id/btn_size_minus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:src="@drawable/fontsize_reduce" android:layout_weight="1.0" style="@style/Btn.Line.Gray" />
+    </LinearLayout>
+</RelativeLayout>

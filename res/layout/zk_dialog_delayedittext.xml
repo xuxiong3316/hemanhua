@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/zk_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="#ff444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:text="自动播放" />
+            <EditText android:textSize="15.0dip" android:textColor="@color/zk_text_edit" android:textColorHint="@color/zk_text_hint" android:id="@id/delayTime_edit" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:hint="@string/zk_delayed_ifno" android:numeric="integer" />
+            <View android:background="@color/zk_exit_divide" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@drawable/zk_exit_textcolor1_sel" android:id="@id/delayTime_btn_cancel" android:background="@drawable/zk_exit_btn_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_txt_btn_cancel" android:layout_weight="1.0" style="@style/zk_MyExitText3" />
+                <View android:background="@color/zk_exit_divide" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <Button android:textColor="@drawable/zk_exit_textcolor_sel" android:id="@id/delayTime_btn_ok" android:background="@drawable/zk_exit_btnok_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_txt_btn_confirm" android:layout_weight="1.0" style="@style/zk_MyExitText3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

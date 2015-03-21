@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preference_child_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qihoo360_perference_checkbox_icon_margin" android:layout_marginRight="@dimen/qihoo360_perference_checkbox_icon_margin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qihoo360_perference_checkbox_text_marginLeft" android:minHeight="64.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@drawable/qihoo360_list_title_selector" android:id="@id/preference_child_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/preference_child_new" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/preference_child_summary_layout" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/qihoo360_white" android:gravity="center" android:id="@id/preference_child_counter" android:background="@drawable/qihoo360_number_bg_grey1" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:minWidth="20.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/qihoo360_grey" android:id="@id/preference_child_summary" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/qihoo360_textAppearanceSmall" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@drawable/qihoo360_list_title_selector" android:id="@id/preference_child_status" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/preference_child_img_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    <CheckBox android:gravity="fill_horizontal|center" android:id="@id/preference_child_checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/qihoo360_selector_checkbox" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/quality_auto" android:text="@string/anime_quality_auto" style="@style/SettingsRadioButton" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff888888" android:id="@id/download_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/setting_anime_download_auto_desc" />
+    <View android:background="@color/no_expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RadioButton android:id="@id/quality_hd" android:text="@string/anime_quality_hd" style="@style/SettingsRadioButton" />
+    <View android:background="@color/no_expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RadioButton android:id="@id/quality_sd" android:text="@string/anime_quality_sd" style="@style/SettingsRadioButton" />
+    <View android:background="@color/no_expand" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RadioButton android:id="@id/quality_ld" android:text="@string/anime_quality_ld" style="@style/SettingsRadioButton" />
+</RadioGroup>

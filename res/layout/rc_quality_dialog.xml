@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/rc_qd_rb_blue_definition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:button="@drawable/rc_radiobutton_selector" android:text="@string/rc_blue_definition" />
+        <RadioButton android:id="@id/rc_qd_rb_super_definition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:button="@drawable/rc_radiobutton_selector" android:text="@string/rc_super_definition" />
+        <RadioButton android:id="@id/qd_rb_high_definition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:checked="true" android:button="@drawable/rc_radiobutton_selector" android:text="@string/rc_high_definition" />
+        <RadioButton android:id="@id/qd_rb_standard_definition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:button="@drawable/rc_radiobutton_selector" android:text="@string/rc_standard_definition" />
+        <RadioButton android:id="@id/qd_rb_low_definition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:button="@drawable/rc_radiobutton_selector" android:text="@string/rc_low_definition" />
+    </RadioGroup>
+</LinearLayout>

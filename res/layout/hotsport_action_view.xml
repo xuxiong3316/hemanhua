@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/hotsportAction" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivHotsportbanner" android:layout_width="fill_parent" android:layout_height="202.0dip" android:scaleType="fitXY" />
+        <RelativeLayout android:background="@color/dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btnGet" android:background="@drawable/hot_get_btn_selector" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:minWidth="80.0dip" android:text="@string/hotsport_get" style="@style/colorffffffsp16" />
+                <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@color/checkin_tip" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btnNoGet" android:background="@drawable/hot_no_btn_seletor" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="44.0dip" android:minWidth="80.0dip" android:text="@string/hotsport_get" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btnLookMore" android:background="@drawable/lottery_btn_seletor" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:minWidth="80.0dip" android:text="@string/hotsport_lookmore" style="@style/colorffffffsp16" />
+            </LinearLayout>
+            <TextView android:textSize="13.0dip" android:textColor="@color/hotsport_province" android:id="@id/tvShareDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="查看更多" android:layout_toLeftOf="@id/llButton" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.cmdm.app.view.GridViewInScrollView android:scrollbarStyle="outsideOverlay" android:gravity="center_horizontal" android:id="@id/gvInScroll" android:background="@color/white" android:paddingLeft="25.0dip" android:paddingTop="25.0dip" android:paddingRight="25.0dip" android:paddingBottom="25.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/null_selector" android:cacheColorHint="@color/transparent" android:verticalSpacing="25.0dip" android:numColumns="2" android:divider="@null" />
+    </LinearLayout>
+</ScrollView>

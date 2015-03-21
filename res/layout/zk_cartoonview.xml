@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cartoonviewlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <AbsoluteLayout android:id="@id/al" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/tucaoaddlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/tucao_info_bar" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tucao_control_bar" android:visibility="invisible" android:clickable="true" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tucao_info_bar1" style="@style/zk_ww">
+            <Button android:id="@id/tucao_input_btn" android:background="@drawable/zk_tucao_selector_input" style="@style/tucao_control_btn" />
+            <Button android:id="@id/tucao_visble_btn" android:background="@drawable/zk_tucao_sel_gone" android:visibility="gone" style="@style/tucao_control_btn" />
+            <Button android:enabled="false" android:id="@id/tucao_pageup_btn" android:background="@drawable/zk_tucao_sel_pageup_noclik" style="@style/tucao_control_btn" />
+            <Button android:enabled="false" android:id="@id/tucao_pagedown_btn" android:background="@drawable/zk_tucao_sel_pagedown_noclik" style="@style/tucao_control_btn" />
+            <Button android:id="@id/tucao_auto_play" android:background="@drawable/zk_tucao_selector_auto_play" android:visibility="gone" style="@style/tucao_control_btn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tucao_info_bar1" android:background="@drawable/zk_tucao_info_selector" android:layout_width="45.0dip" android:layout_height="45.0dip" style="@style/zk_ww">
+            <TextView android:textSize="12.0dip" android:textColor="@color/zk_white" android:layout_gravity="center_horizontal" android:layout_marginTop="10.0dip" android:text="吐槽" style="@style/zk_ww" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/zk_white" android:layout_gravity="center_horizontal" android:id="@id/tucaoInfo" android:visibility="gone" android:text="9999" style="@style/zk_ww" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/input_info_bar" android:background="#88000000" android:padding="25.0dip" android:visibility="gone" android:layout_centerInParent="true" style="@style/zk_ww">
+        <TextView android:textSize="25.0sp" android:textColor="@color/zk_white" android:paddingBottom="10.0dip" android:text="请点击屏幕" style="@style/zk_ww" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/zk_white" android:text="选择需要放置吐槽的位置" style="@style/zk_ww" />
+    </LinearLayout>
+    <ImageView android:id="@id/input_touch" android:visibility="gone" android:clickable="true" android:src="@android:color/transparent" style="@style/zk_ff" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tucao_send_cancel_layout" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/zk_ww">
+        <Button android:id="@id/tucao_send_cancel" android:background="@drawable/zk_tucao_send_cancel_selector" android:layout_width="70.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" />
+        <Button android:id="@id/tucao_send_ok" android:background="@drawable/zk_tucao_send_ok_selector" android:layout_width="70.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" />
+    </LinearLayout>
+    <View android:id="@id/exit_bgview" android:background="@color/zk_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progressbarNext" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip" android:indeterminateDrawable="@drawable/zk_demo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleSmall" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/RLLoadingProgress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/loading_flying" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/loadingImageView" android:background="@anim/zk_wait_progress_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:id="@id/id_tv_loadingmsg" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="漫 赏 天 下 动 漫" android:layout_below="@id/loadingImageView" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:id="@id/progressBarText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="80.0dip" android:text="@string/zk_currutn_loaidng" />
+        <RelativeLayout android:gravity="center" android:id="@id/loading_seekbar_layout" android:layout_width="130.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip">
+            <SeekBar android:id="@id/loading_seekbar" android:layout_width="130.0dip" android:layout_height="2.0dip" android:maxHeight="2.0dip" android:progress="1" android:progressDrawable="@drawable/zk_seekbar_loading" android:thumb="@null" android:thumbOffset="0.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/progressbarTextView" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="1%" android:layout_below="@id/loading_seekbar_layout" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/showTaskLinLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/newLinerlayout" android:background="@drawable/zk_bottom_taskbar_bg_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="#ffc8c8c8" android:id="@id/currentIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="5.0dip" android:text="111话" />
+            <Button android:textSize="12.0dip" android:textColor="#ffc8c8c8" android:id="@id/pageshowbutton2" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/2页" />
+            <TextView android:textSize="12.0dip" android:id="@id/TextView_netType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="CMWAP" />
+            <TextView android:textSize="12.0dip" android:id="@id/TextView_currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="00:00" />
+            <ImageView android:id="@id/batter_imageview" android:background="@drawable/zk_battery_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/topMeunlayout" android:background="@drawable/zk_comic_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/move_back_layout" android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerVertical="true">
+            <Button android:layout_gravity="center" android:id="@id/move_back_btn" android:background="@drawable/zk_btn_selector_back1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="@drawable/zk_textcolor_selector1" android:layout_gravity="center" android:id="@id/top_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="说说" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/topItemlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center" android:id="@id/top_screen_layout" android:background="@drawable/zk_sel_btn_autoscreen_d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:layout_gravity="center" android:id="@id/top_btn_autoscreen" android:background="@drawable/zk_sel_btn_autoscreen_a" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:id="@id/top_btn_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="分享" android:drawableTop="@drawable/zk_bg_shuqian_btn" android:layout_weight="1.0" style="@style/zk_MyMenuBtn" />
+            <Button android:id="@id/top_btn_bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="书签" android:drawableTop="@drawable/zk_bg_shuqian_btn" android:layout_weight="1.0" style="@style/zk_MyMenuBtn" />
+            <Button android:id="@id/top_btn_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="选集" android:drawableTop="@drawable/zk_bg_xuanji_btn" android:layout_weight="1.0" style="@style/zk_MyMenuBtn" />
+            <Button android:id="@id/top_btn_meun2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:drawableTop="@drawable/zk_btn_selector_more" android:layout_weight="1.0" style="@style/zk_MyMenuBtn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/RelativeLayout_popLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/LinearLayout_Brightness">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/zk_brightness_touchnumber" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0dip" android:id="@id/seekBarTouchBrightnessNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="100" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LinearLayout_Brightness" android:background="@drawable/zk_battery_bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:background="@drawable/zk_brightness_left" android:layout_width="45.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" />
+        <SeekBar android:id="@id/seekBar_setBrightness" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="70.0dip" android:maxHeight="6.0dip" android:progressDrawable="@drawable/zk_seekbar_img" android:thumb="@drawable/zk_bright_thumb" android:thumbOffset="2.0dip" />
+        <Button android:background="@drawable/zk_brightness_right" android:layout_width="45.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/showBottomSeekBarMenu" android:background="@drawable/zk_comic_bottom_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_pageNumberBg" android:background="@drawable/zk_brightness_touchnumber" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0dip" android:layout_gravity="center_horizontal" android:id="@id/textView_pageNumberCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lineary_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="8.0dip">
+                    <TextView android:textSize="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="共" />
+                    <TextView android:textSize="15.0dip" android:id="@id/textView_pageNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                    <com.android.cartoonplayer.widget.MySeekBar android:id="@id/seekBar_touchPageNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:maxHeight="2.0dip" android:progressDrawable="@drawable/zk_seekbar_img" android:thumb="@drawable/zk_thumb" android:thumbOffset="0.0dip" android:layout_toLeftOf="@id/btn_screemlight" android:layout_toRightOf="@id/textView_pageNumber" android:layout_centerInParent="true" />
+                    <Button android:id="@id/btn_screemlight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="亮度" android:drawableTop="@drawable/zk_btn_selector_light" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/zk_MyMenuBtn" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/bottom_view" android:background="@drawable/zk_divide_menu" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/layout_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/collect_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/collect_image_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_exit_collect" android:drawableTop="@drawable/zk_btn_selector_collect" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/auto_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/auto_image_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_autoplayer" android:drawableTop="@drawable/zk_bg_autoplay_btn" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_model_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/cmep_model_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_model_cmep" android:drawableTop="@drawable/zk_bg_fentumodel_btn" style="@style/zk_MyMenuBtn" />
+                    <Button android:id="@id/cmep_model_btn1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_model_cmmh" android:drawableTop="@drawable/zk_bg_juanzhimodel_btn" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/flower_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/flower_image_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_shonghua" android:drawableTop="@drawable/zk_bg_xuanhua_btn" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/egg_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/egg_image_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zk_jidan" android:drawableTop="@drawable/zk_bg_jidan_btn" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cmep_light_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/cmep_btn_screemlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亮度" android:drawableTop="@drawable/zk_sel_btn_light_a" style="@style/zk_MyMenuBtn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/remain_image_layout1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/remain_image_layout2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/muluLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/topMeunlayout" android:layout_alignParentRight="true">
+        <RelativeLayout android:orientation="vertical" android:id="@id/muluListLayout" android:background="@color/zk_mulu_bottom_bg" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="240.0dip" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/titleLayout" android:background="@color/zk_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <Button android:textColor="#fff5f5f5" android:id="@id/rank_btn" android:background="@drawable/zk_mulu_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:textSize="15.0sp" android:textColor="@color/zk_mulu_page_text" android:id="@id/page_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第1页" />
+                    <ImageView android:id="@id/page_image" android:background="@drawable/zk_mulu_page_a" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <GridView android:scrollbarSize="1.0dip" android:id="@id/muluGridView" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:listSelector="#00000000" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_below="@id/titleLayout" />
+            <ProgressBar android:id="@id/muluLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/light_verticalseekbar_layout" android:background="@drawable/zk_btn_light_bg" android:visibility="gone" android:layout_marginRight="18.0dip" android:layout_above="@id/showBottomSeekBarMenu" android:layout_alignParentRight="true" style="@style/zk_ww">
+        <TextView android:textSize="14.0dip" android:textColor="#ff969696" android:id="@id/light_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="50%" />
+        <com.android.cartoonplayer.widget.VerticalSeekBar android:layout_gravity="center" android:id="@id/light_verticalseekbar" android:layout_width="wrap_content" android:layout_height="150.0dip" android:layout_marginBottom="5.0dip" android:maxHeight="2.0dip" android:max="255" android:progress="56" android:progressDrawable="@drawable/zk_seekbar_img" android:thumb="@drawable/zk_pressed_button" android:thumbOffset="0.0dip" />
+        <Button android:id="@id/light_auto_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="自动" style="@style/zk_MyMenuBtn" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_seekbar_layout2" android:visibility="gone" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_marginTop="250.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <SeekBar android:id="@id/loading_seekbar2" android:layout_width="100.0dip" android:layout_height="3.0dip" android:maxHeight="2.0dip" android:progress="20" android:progressDrawable="@drawable/zk_seekbar_loading" android:thumb="@null" android:thumbOffset="0.0dip" />
+        <TextView android:textSize="14.0dip" android:id="@id/progressbarTextView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="1%" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/zk_reload_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/moreLayout" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_below="@id/topMeunlayout" android:layout_alignParentRight="true">
+        <GridView android:gravity="center" android:id="@id/morelistview" android:background="@color/zk_more_color" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/zk_null_selector" android:cacheColorHint="#00000000" android:numColumns="2" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

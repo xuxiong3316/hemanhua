@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llMbRecharge" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/activityBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rlNickBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/tip_color" android:gravity="center_horizontal" android:id="@id/err_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text=" " />
+        <RelativeLayout android:id="@id/rlMobileNum" android:background="@drawable/bar_list" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="12.0dip" android:layout_below="@id/err_tip">
+            <TextView android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="兑换账号：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/color444444sp18" />
+            <EditText android:enabled="false" android:id="@id/edit_Phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="16.0dip" android:hint="@string/edit_phone_prompt_mb" android:layout_toRightOf="@id/tvDesc" android:layout_centerVertical="true" android:inputType="phone" android:imeOptions="actionNext" style="@style/color444444sp16" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llcharge" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/tab_text_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="请选择兑换数量：" />
+        <GridView android:gravity="left|center" android:id="@id/gvManBiNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:listSelector="@null" android:verticalSpacing="10.0dip" android:numColumns="3" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="友情提示：" style="@style/color_primary_sp18" />
+        <TextView android:id="@id/tvDiscountTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="除1漫币外，其他数量的漫币兑换打9折。" style="@style/color_primary_sp14" />
+        <View android:background="@drawable/listview_divider_no_inset" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额：" style="@style/color_primary_sp18" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/red" android:id="@id/tvPaytip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 元" />
+        </LinearLayout>
+        <Button android:textStyle="bold" android:id="@id/btnSure" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="28.0dip" android:text="@string/txt_recharge_manbi" style="@style/Btn.Line.Orange.NormalSize" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llChargeAgain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/tab_text_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/txt_charge_success" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/tab_text_default" android:id="@id/tvMyMbCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <Button android:id="@id/btnChargeAgain" android:background="@drawable/red_btn_selector" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="20.0dip" android:text="@string/txt_charge_again" style="@style/my_cartoon_textview" />
+    </LinearLayout>
+</LinearLayout>

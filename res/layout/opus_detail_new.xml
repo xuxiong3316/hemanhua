@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisunflytone.framwork.widget.DragToCloseRelativeLayout android:orientation="vertical" android:id="@id/main" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/detail_title_height" android:layout_alignParentTop="true" layout="@layout/title_detail" />
+    <include android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" layout="@layout/progress_wait" />
+    <include android:id="@id/reload" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" layout="@layout/reload_layout" />
+    <LinearLayout android:id="@id/tabs" android:background="@drawable/bar_tab" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="3.0" android:layout_below="@id/title_bar" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/tab_catalog" android:tag="0" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="选集" android:layout_weight="1.0" style="@style/tab_detail" />
+        <TextView android:id="@id/tab_info" android:tag="1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="详情" android:layout_weight="1.0" style="@style/tab_detail" />
+        <FrameLayout android:id="@id/tab_comment" android:tag="2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_gravity="fill" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="评论" style="@style/tab_detail" />
+            <TextView android:gravity="center" android:layout_gravity="top|center" android:id="@id/comment_num" android:background="@drawable/numbers_red" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="1.0dip" android:minWidth="20.0dip" style="@style/color_inverse_sp12" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.hisunflytone.framwork.BaseViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabs" android:layout_alignParentBottom="true">
+        <include android:id="@id/stub_catalog" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/stub_detail_catalog" />
+        <include android:id="@id/stub_info" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/stub_detail_info" />
+    </com.hisunflytone.framwork.BaseViewPager>
+</com.hisunflytone.framwork.widget.DragToCloseRelativeLayout>
